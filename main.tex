@@ -1,0 +1,52 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[a4paper]{geometry}
+\usepackage[linkbordercolor ={0 1 0}]{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\usepackage{environ}
+ 
+\title{Programmi ed esercizi per il Senior}
+\date{}
+%\abstractname{asas}
+
+
+\topmargin -3cm
+\oddsidemargin -1cm
+\textwidth 18cm
+\textheight	27cm
+\parindent=0mm
+
+\newif\ifsoluzioni 
+ \NewEnviron{sol}{\ifteacher \textit{Sol:} \BODY\fi} 
+ 
+ \soluzionitrue
+ %\soluzionifalse
+ %per mostrare le soluzioni, scegliere \soluzionitrue, altrimenti l'altro
+ 
+ 
+ %questo nuovo environmente serve per evidenziare lo scheletro della lezione 
+ \NewEnviron{short}{
+ \center
+ \parbox{14cm}{\large \BODY \normalsize}
+ 
+ \vspace{0.3cm}
+}
+
+\begin{document}
+\maketitle
+
+
+I programmi sono descritti sinteticamente all'inizio, come linee guida. Il testo successivo serve per specificare alcuni dettagli e come controllo per non dimenticare niente per chi fa lezione. 
+
+\vspace{1cm}
+ \input{programmi}
+ 
+ \input{esercizi}
+ 
+ 
+\end{document}

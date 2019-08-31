@@ -1,0 +1,186 @@
+\section{Programmi Basic}
+
+\subsection{GB - 1 [Metodi Algebrici]}
+
+\subsection{GB - 2 [Trasformazioni]}
+
+
+\begin{short}
+Isometrie: Traslazione, Simmetria, Rotazione. Similitudine. Scrittura di queste trasformazioni in complessi. [$\bigstar$ Affinità] 
+Inversione Circolare. Inversione + Simmetria in un triangolo.
+\end{short}
+
+
+
+\vspace{0.3cm}
+\textbf{Isometrie. }Le isometrie sono trasformazioni che conservano la distanza. Le figure mantengono la stessa forma: le rette vanno in rette, circonferenze in circonferenze, poligoni in poligoni, gli angoli mantengono la misura. 
+
+Le isometrie più importanti sono traslazione, riflessione e rotazione. 
+
+La traslazione si definisce con un vettore $\vec{v}$, che manda ogni punto $P$ in $P+\vec{v}$ (in cartesiane e in complessi).
+
+La rotazione si definisce tramite un centro $C$ e un angolo $\alpha$ tra 0 e 360.  In complessi, se il centro è l'origine, il punto z viene mandato in $z\cdot e^{i\alpha}$; se il centro è un altro punto, allora bisogna fare una traslazione, rotazione e traslare indietro: $z\rightarrow (z-c)\cdot e^{i\alpha}+c$.
+
+La riflessione si definisce tramite una retta $r$, ogni punto viene mandato nel suo simmetrico rispetto a questa retta. La riflessione inverte l'orientazione a differenza della traslazione e della rotazione.
+
+Come per la rotazione, per scrivere in complessi la riflessione si compongono tre trasformazioni: si sceglie un punto $c$ sulla retta e sia $\alpha$ l'angolo che forma con l'asse reale, allora $z$ va in $\overline{(z-c)e^{-i\alpha}}\cdot e^{i\alpha}+c=\overline{(z-c)}\cdot e^{2i\alpha}+c$.
+
+\textit{Esempio easy:}  $ABC$ triangolo, $H$ ortocentro, $AH$ interseca $BC$ in $D$ e la circonferenza circoscritta in $N$. Dimostrare $DH=HN$.
+
+\vspace{0.3cm}
+[$\bigstar$ Fatti sparsi: 
+
+1) ogni isometria è composizione di al massimo tre riflessioni.
+
+2)Si possono dividere in due gruppi, a seconda se mantengono l'orientamento oppure no. Quelle che mantengono l'orientamento sono traslazione e rotazione, quelle che lo invertono sono riflessione e glissoriflessione(=traslazione lungo una retta e riflessione lungo quella retta), questa sono tutte le isometrie possibili
+
+3) rotazione di $\alpha$+rotazione di $\beta$ = rotazione di $\alpha+\beta$ se $\alpha+\beta \neq 0$, altrimenti è traslazione. Traslazione+rotazione di $\alpha$=rotazione di $\alpha$ con un altro centro. analogamente per rotazione+traslazione]
+
+\vspace{0.4cm}
+
+\textbf{Affinità}
+
+\vspace{0.4cm}
+
+\textbf{Inversione.} A ogni punto $P$ associa $P'$ tale che $OP\cdot OP'=R^2$. Costruzione con le tangenti (per punto esterno) e al contrario per punto interno. È involutiva, scambia interno ed esterno, i punti sulla circonferenza di inversione rimangono gli stessi. 
+
+Le rette per l'origine rimangono rette per l'origine, circonferenze per l'origine diventano rette non per l'origine [questo si può dimostrare], circonferenze non per l'origine diventano circonferenze non per l'origine. Calcolo di $A'B'=\frac{AB\cdot R^2}{OA \cdot OB}$, dire che $OAB$ e $OB'A'$ sono simili. L'inversione conserva gli angoli tra le curve, ma non gli angoli tra punti.
+
+\textit{Esempio} Teorema di Tolomeo.
+
+In complessi, l'inversione nell'origine di raggio $R$ manda $z$ in $R^2\cdot \overline{z}^{-1}$. 
+
+
+[$\bigstar$ Si può fare un ponte tra potenze e inversione: una circonferenza $\gamma$ è invariata per inversione in $O$ di raggio $R$ se $pow_{\gamma}(O)=R^2$. er esempio $\gamma$ circoscritta ad $ABC$, $P$ è l'intersezione della tangente in $A$ con $BC$, allora l'inversione in $P$ di raggio $PA$ scambia $B$ e $C$ e di conseguenza lascia invariata $\gamma$ ]
+
+\vspace{0.4cm}
+Inversione + Simmetria
+
+
+\subsection{GB - 3 [Sintetica]}
+\begin{short}
+ Circonferenza di Apollonio. Circonferenza di Feuerbach. Simmediana. Segmenti di tangenza di Incerchi/Excerchi, punti di Gergonne e Nagel. Retta di simson. Applicazioni di potenze e assi radicali. 
+\end{short}
+
+
+
+\clearpage
+\section{Programmi Medium}
+
+\subsection{GM - 1 [Numeri complessi e coordinate baricentriche]}
+Numeri complessi nella geometria euclidea. Si assume che si possegga una discreta maneggevolezza con il piano complesso.
+Rapido ripasso sulla forma polare dei numeri complessi e significato geometrico delle operazioni.
+
+Condizione di allineamento e scrittura dell'equazione di una retta per due punti. Condizione di parallelismo e scrittura della parallela ad una retta passante per un punto ad essa esterno. Condizione di perpendicolarità e scrittura della perpendicolare ad una retta passante per un punto ad essa esterno. Birapporto fra 4 numeri complessi e condizione di ciclicità.
+
+Equazione di una generica circonferenza. Scelta classica delle coordinate: circonferenza circoscrita $\equiv$ circonferenza unitaria. Punti notevoli nella scelta classica delle coordinate. Esempio di quanto si semplificano i conti: intersezione di due corde generiche. Coordinate $u,v,w$ per l'incentro. 
+
+\vspace{0.5cm}
+Definizione di coordinate baricentriche. 
+
+Come verificare l'allineamento di tre punti ed equazione di una retta generica. Intersezione di due rette. Area di un triangolo di cui si conoscono le coordinate dei vertici. Punto all'infinito di una retta. Quando due rette sono parallele?
+
+Punti notevoli e notazione di Conway: baricentro, incentro, ortocentro, circocentro, excentri, nagel, gergonne, lemoine... Coniugati isogonali e coniugati isotomici.
+
+Equazione della circonferenza circoscritta (come coniugato isogonale della retta all'infinito).
+Equazione di una circonferenza in posizione generale. Equazione dell'asse radicale fra una circonferenza in posizione generale e la circonferenza circoscritta al triangolo referenziale: relazione di tale equazione con le potenze dei vertici del triangolo referenziale rispetto alla circonferenza in posizione generale. Formula di sdoppiamento per la tangente e la polare.
+
+\clearpage
+\subsection{GM - 2, [Geometria proiettiva, poli e polari, quadrilateri armonici]}
+
+\begin{short}
+ Lunghezze con segno (velocemente). Birapporto tra 4 punti su una retta. Proiezione del birapporto, quindi birapporto tra 4 rette o 4 punti su circonferenza. Quaterna Armonica. Teorema di Desargues.\\
+ Polo e Polare. Teorema di La Hire. Lemma della polare. Teorema di Pappo. Teorema di Pascal. Dualità polo-polare. 
+\end{short}
+
+Lunghezze con segno. Definizione di birapporto fra 4 punti $(A,B;C,D)$ su una retta e quando si dicono coniugati armonici. Conservazione del birapporto fra punti per proiezione da un punto esterno. Discussione del caso in cui, proiettando da un punto esterno su una retta, un punto va nel punto all'infinito: cosa diventa il birapporto nel caso in cui un punto sia all'infinito? Unicità del quarto armonico. 
+Definizione di birapporto fra 4 rette e relazione con gli angoli che queste formano. Definizione di birapporto fra 4 punti su una circonferenza.
+
+Teorema di Desargues, Teorema di Pappo e Teorema di Pascal.
+
+
+\vspace{0.5cm}
+
+Definizione proiettiva di polare: data una circonferenza (o due rette) e punto $P$, si traccino le rette che passano per P e secano lo circonferenza (o incontrano le rette) in due punti $A$ e $B$. Il luogo dei punti $X$ tali che $(A,B;P,X)=-1$ è una retta detta polare di $P$ rispetto alla circonferenza (o alle due rette).  Proprietà geometriche nel caso della circonferenza.
+
+Dualità poli-polari. Lemma della polare: Dato un punto $P$ e una circonferenza (o due rette), se traccio due rette secanti che tagliano la circonferenza (o le rette) in due coppie di punti $A,B$ e $C,D$ dimodoché i punti siano nell'ordine $P,A,B$ e $P,C,D$, allora $AD\cap BC$ e $AC\cap BD$ sono sulla polare di $P$ rispetto alla circonferenza (o alle due rette).  Teorema di Brianchion.
+
+Definizione di quadrilatero armonico con i birapporti. In un quadrilatero armonico una diagonale e la tangenti alla circonferenza in cui è inscritto condotte per gli altri due punti concorrono.
+
+
+\vspace{0.3cm}
+\large{\textbf{Versione estesa}}\normalsize
+
+\vspace{0.3cm}
+Il setting della geometria proiettiva è quello della retta euclidea a cui viene aggiunto un punto all'infinito, o del piano euclideo in cui viene aggiunta una retta all'infinito.
+
+\vspace{0.3cm}
+\textbf{Lunghezze con segno} Su una retta $r$ sono presenti alcuni punti $A,B,C\ldots$. Si scelga un verso sulla retta e si considerino i segmenti su di essa come vettori, con segno positivo se orientati nel verso scelto e negativo altrimenti. Il vantaggio di questo è che vale $\overline{AC}=\overline{AB}+\overline{BC}$ per qualsiasi posizione reciproca di $A,B,C$.
+
+\vspace{0.3cm}
+\textbf{Birapporto} Dati 4 punti $A,B,C,D$ su una retta, si definisce il birapporto è la seguente quantità:
+$$(A,B;C,D)=\frac{\frac{AC}{AD}}{\frac{BC}{BD}}=\frac{AC\cdot BD}{BC\cdot AD}$$
+dove le lunghezze sono prese con segno.
+
+\vspace{0.3cm}
+Se $(A,B;C,D)=k$, qual è il valore del birapporto se si permuta l'ordine in cui si prendono i punti? Le $4!=24$ possibilità si dividono in $6$ gruppi in ciascuno dei quali il birapporto è lo stesso. Se si scambiano le due coppie oppure si inverte l'ordine in entrambe il birapporto non cambia: $(A,B;C,D)=(C,D;A,B)=(B,A;D,C)$.
+
+Se si scambiano i primi due o gli ultimi due, il birapporto diventa reciproco: $(A,B;D,C)=(B,A;C,D)=1/k$.
+
+Se si scambia il secondo e il terzo $B \leftrightarrow C$, si ottiene $(A,C;B,D)=1-k$.
+
+Se si scambia il primo e il terzo $A \leftrightarrow C$, si ottiene $(C,B;A,D)=\frac{k}{k-1}$.
+
+
+Combinando queste trasformazioni, si possono ottenere i valori di $(A,C;D,B)=\frac{1}{1-k}$ e $(A,D;B,C)=\frac{k-1}{k}$.
+
+Un'altra cosa interessante è fissare i punti $A,B,C$ e vedere come varia il birapporto $(A,B;C,D)$ al variare di $D$ sulla retta. Questa è una funzione biettiva dalla retta proeittiva in $\mathbb{R}\cup\infty$, nei casi degeneri in cui $D$ coincide con uno dei punti assume i valori degeneri di $0,1,\infty$; se $D=\infty$, il birapporto vale $AC/BC$.
+
+\vspace{0.3cm}
+\textbf{Quaterna Armonica} Quattro punti su una retta si dicono una quaterna armonica se $(A,B;C,D)=-1$. Per quanto detto sulle permutazioni, una quaterna è armonica se e solo se non è degenere e $(A,B;C,D)=(B,A;C,D)$.
+
+Una quaterna armonica dev'essere "incatenata": fissati $A,B$, uno tra $C$ e $D$ deve stare all'interno del segmento $AB$ e uno all'esterno. Analogamente si avrà che uno tra $A$ e $B$ sta all'interno del segmento $CD$ e uno all'esterno.
+
+\vspace{0.3cm}
+
+
+
+\clearpage
+\subsection{GM - 3 [Configurazione di Miquel, rotomotetia, qualcosa sulle mistilinee e inversioni sintetiche]}
+
+\begin{short}
+ Angoli orientati, Miquel su triangolo e su quadrilatero. Lemma della rotomotetia. Quadrilatero completo e rotomotetie presenti nella configurazione. Altre applicazioni di inversione. mistilinei,
+\end{short}
+
+Angoli orientati ed esercizi/complementi sui quadrilateri ciclici. 
+
+Punto di Miquel riferito a una terna di punti presi sui lati di un triangolo. Punto di Miquel riferito a un quadrilatero. Facendo opportuno riferimento all'esercizio 2 della sezione \textbf{GM-1}, osservare che il punto di Miquel di un quadrilatero $ABCD$ è il centro della \emph{spilar similarity} che manda $AB$ in $DC$ o $AD$ in $BC$. Il quadrilatero $ABCD$ è ciclico se e solo se il punto di Miquel $M$ sta su $QR$, dove $Q=AB\cap CD$ e $R=AD\cap BC$.
+
+Nel caso di ciclicità:
+\begin{itemize}
+	\item $OM$ è perpendicolare a $QR$, essendo $O$ il circocentro di $ABCD$;
+	\item $A,C,M,O$ e $B,D,M,O$ sono conciclici;
+	\item $AC$, $BD$ e $OM$ sono concorrenti in $P$;
+	\item $MO$ biseca $\angle CMA$ e $\angle BMD$;
+	\item $P$ e $M$ sono inversi rispetto alla circonferenza circoscritta al quadrilatero $ABCD$.
+\end{itemize} 
+
+Un'avventura mistilinea: considerati quattro punti in senso antiorario su una circonferenza $\Gamma$ ($A,B,C,D$) ed essendo $P=AC\cap BD$, considero $\omega$ tangente ai segmenti $AP$ e $BP$ e a $\Omega$ rispettivamente in $E$, $F$ e $T$. Provare le seguenti:
+\begin{itemize}
+	\item $TE$ biseca l'arco $AC$ che contiene $D$;
+	\item Detto $I$ l'incentro di $ABC$, $IFTB$ è ciclico e $I\in EF$
+	\item Detto $J$ l'incentro di $APB$ allora $TJFB$ è ciclico e $TJ$ biseca $\angle ATB$.
+\end{itemize}
+
+Ripasso delle proprietà base riguardanti l'inversione. $\sqrt{bc}$-inversione più simmetria: risoluzione di alcuni problemi.
+\clearpage
+
+ 
+
+
+
+
+
+
+
+

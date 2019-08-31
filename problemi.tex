@@ -1,6 +1,38 @@
 \section{Problemi Basic}
 \subsection{GB - 1, Problemi}
+\begin{itemize}
+ \item \textbf{EGMO 2013 - 1} Nel triangolo $ABC$, si prolunghi il lato $BC$ dalla parte di $C$ di un segmento $CD$ tale che $CD=BC$. Si prolunghi poi il lato $CA$ dalla parte di $A$ di un segmento $AE$ tale che $AE= 2CA$.Dimostrare che, se $AD=BE$, allora il triangolo $ABC$ è rettangolo
+\end{itemize}
+
 \subsection{GB - 2, Problemi}
+ \begin{itemize}
+     \item \textbf{IMOSL2013 - G2}  Sia $ABC$ un triangolo, e sia $\omega$ la sua circonferenza circoscritta.  Siano $M$ il punto medio di $AB$, $N$ il punto medio di $AC$, $T$ il punto medio dell’arco $BC$ di $\omega$ che noncontiene $A$. La circonferenza circoscritta al triangolo $AMT$ interseca l’asse di $AC$ in un punto $X$ interno al triangolo $ABC$. La circonferenza circoscritta al triangolo $ANT$ interseca l’asse di $AB$ in un punto $Y$ interno al triangolo $ABC$. Le rette $MN$ e $XY$ si intersecano in $K$ .
+     
+     Dimostrare che $KA=KT$.
+     
+     \begin{sol}La simmetria rispetto all'asse di $AT$ manda $M$ in $X$ e $N$ in $Y$, quindi $K$ rimane fisso e sta sull'asse.
+     \end{sol}
+     
+     \item \textbf{EGMO 2016 - 4} Due circonferenze aventi lo stesso raggio, $\omega_1$ e $\omega_2$ , si intersecano in due punti distinti $X_1$ and $X_2$ . Si consideri una circonferenza $\omega$ tangente esternamente a $\omega_1$ nel punto $T_1$ e internamente a $\omega_2$ nel punto $T_2$ . Si dimostri che il punto d’intersezione fra le rette $X_1T_1$ e $X_2T_2$ giace su $\omega$.
+     
+      \begin{sol}
+      Inversione in $X_1$
+      \end{sol}
+    
+	\item \textbf{IMOSL2011 - G4} Sia $ABC$ un triangolo acutangolo e $\Gamma$ la sua circonferenza circoscritta. Sia $B_0$ il punto medio di $AC$ e $C_0$ il punto medio di $AB$. Sia $D$ il piede dell'altezza da $A$ su $BC$ e sia $G$ il baricentro di $ABC$. Sia $\omega$ la circonferenza passante per $B_0,C_0$ e tangente a $\Gamma$ in un punto $X\neq A$. 
+	
+	Dimostrare che $D,X,G$ sono allineati.
+	
+	\begin{sol}
+	\emph{nota: la soluzione proposta è basic difficile/medium facile}
+	
+	Inversione + simmetria di centro A e raggio $\sqrt(AB*AB_0)$, scambia B e $B_0$, C e $C_0$, manda $D$ nel centro di $\Gamma$ O e $\omega$ in una circonferenza per $B$ e $C$ tangente all'immagine di $\Gamma$, $B_0C_0$, in un punto $Y$. Poiché $BC$ e $B_0C_0$ sono paralleli, $Y$ sta sull'asse di $BC$, quindi $OY$ è perpendicolare a $B_0C_0$. 
+	
+	Sia $T$ l'intersezione delle tangenti a $\Gamma$ per A,X e di $B_0C_0$, è centro radicale di $\Gamma, \omega$ e la circoscritta a $AB_0C_0$. ATXYO è ciclico, l'immagine sotto inversione è la retta XDY. Ora basta mostrare DY intersecato la mediana $AA_0$ è G, ma $AD$ è il doppio di $XA_0$ e sono paralleli, quindi l'intersezione è proprio G.
+	\end{sol}
+	\end{itemize}
+	
+	
 \subsection{GB - 3, Problemi}
 \begin{enumerate}
     \item \textbf{Polish MO 2018 - 5} Sia $ABC$ un triangolo acutangolo con $AB\neq AC$
@@ -8,7 +40,9 @@
     
     Dimostrare che $PQ$ è perpendicolare alla mediana passante per $A$ del triangolo $ABC$
     
-    %Assi radicali swag: 1) La circonferenza degenere di centro $A$, la circoscritta a $AEF$ e a $BCEF$ hanno $Q$ come centro radicale (in quanto sta su $EF$ per le ultime due e $AQ$ tange la circoscritta $AEF$ per le prime due). 2) $PA^2=PB\cdot PC$, quindi P sta sull'asse radicale tra $A$ e la circoscritta a $BCEF$. Dunque $PQ$ è asse radicale delle due circonferenze ed è perpendicolare alla congiungente dei centri, che è AM
+    \begin{sol}Assi radicali swag: 1) La circonferenza degenere di centro $A$, la circoscritta a $AEF$ e a $BCEF$ hanno $Q$ come centro radicale (in quanto sta su $EF$ per le ultime due e $AQ$ tange la circoscritta $AEF$ per le prime due). 2) $PA^2=PB\cdot PC$, quindi P sta sull'asse radicale tra $A$ e la circoscritta a $BCEF$. Dunque $PQ$ è asse radicale delle due circonferenze ed è perpendicolare alla congiungente dei centri, che è $AM$
+    \end{sol}
+
 \end{enumerate}
 
 
@@ -62,13 +96,15 @@
 	\item \textbf{[IMO 2014 - 4]} Siano $P$ e $Q$ punti su un segmento $BC$ di un triangolo acutangolo $ABC$ tali che $\angle PAB = \angle BCA$ e $\angle CAQ=\angle ABC$. Siano $M$ e $N$ punti su $AP$ e $AQ$ rispettivamente tali che $P$ è punto medio di $AM$ e $Q$ è punto medio di $AN$.
 	
 	Mostrare che l'intersezione di $BM$ e $CN$ giace sulla circonferenza circoscritta di $ABC$.
+	
 	\item \textbf{[Iran TST 2007 - Day 2 - 3]}
 	Sia $\omega$ la circonferenza inscritta ad un triangolo $ABC$ che tange $AB$ e $AC$ rispettivamente in $F$ e $E$. Siano $P$ e $Q$ su $AB$ e $AC$ rispettivamente in modo che $PQ$ sia parallelo a $BC$ e tangente ad $\omega$. Siano $T$ l'intersezione di $EF$ con $BC$ e $M$ il punto medio di $PQ$. 
 	
 	Mostrare che $TM$ tange $\omega$.
 	
-	%Se X=AD\cap \omega, $TX$ tange $\omega$ per quadrilateri armonici. Poi (XDAY)=-1 e proiettando da $T$ su $PQ$ ottengo che l'intersezione di $TX$
-	% con $PQ$ è il suo punto medio
+	\begin{sol}Se $X=AD\cap \omega$, $TX$ tange $\omega$ per quadrilateri armonici. Poi (XDAY)=-1 e proiettando da $T$ su $PQ$ ottengo che l'intersezione di $TX$
+	 con $PQ$ è il suo punto medio
+	\end{sol}
 	
 	\item \textbf{[Iran TST 2009 - Day 2 - 3]}
 	In un triangolo $ABC$ è inscritta una circonferenza $\omega$ di centro $I$ che interseca i lati $BC$, $CA$ e $AB$ rispettivamente in $D$, $E$ e $F$. Sia $M$ il piede della perpendicolare da $D$ a $EF$. Sia $P$ il punto medio di $DM$ e $H$ l'ortocentro del triangolo $BIC$.
@@ -79,7 +115,8 @@
 	
 	Mostrare che $\displaystyle\frac{NX}{NY}=\displaystyle\frac{AC}{AB}$.
 	
-	%Usa l'esercizio 13 e nota che DXY è simile ad ABC e ID è bisettrice di YDX. Oppure semplicemente formula seni-lati su IXY e un po' di trigonometria
+	\begin{sol}Usa l'esercizio 13 e nota che DXY è simile ad ABC e ID è bisettrice di YDX. Oppure semplicemente formula seni-lati su IXY e un po' di trigonometria
+	\end{sol}
 	
 	\item \textbf{[IMO SL 2007 - G8]}
 	Sul lato $AB$ di un quadrilatero convesso $ABCD$ è preso un punto $P$. Sia $\omega$ la circonferenza inscritta al triangolo $CPD$ e sia $I$ il suo centro. Supponiamo che $\omega$ sia tangente alle circonferenze inscritte ai triangoli $APD$ e $BPC$ in $K$ e $L$ rispettivamente. Siano $E$ l'intersezione delle rette $AC$ e $BD$ e $F$ l'intersezione delle rette $AK$ e $BL$.
@@ -108,8 +145,9 @@
 	
 	Mostrare che i triangoli $A_2B_2C_2$ e $A_3B_3C_3$ sono simili.
 	
-	%A_2 è il centro della spilar similiarity che porta BC_1 in CB_1 quindi A_2C/A_2B=B_1C/C_1B=AB_3/AC_3 da cui A_2BC è
-	%simile ad AC_3B_3 e da qui sono angoli 
+	\begin{sol}$A_2$ è il centro della spilar similiarity che porta $BC_1$ in $CB_1$ quindi $A_2C/A_2B=B_1C/C_1B=AB_3/AC_3$ da cui $A_2BC$ è
+	simile ad $AC_3B_3$ e da qui sono angoli 
+	\end{sol}
 	\item \textbf{[EGMO 2013 - 5]}
 	Sia $\Omega$ la circonferenza circoscritta ad un triangolo $ABC$. La circonferenza $\omega$ è tangente ai lati $AC$ e $BC$ e internamente alla circonferenza $\Omega$ in un punto $P$. Una retta parallela ad $AB$ che interseca l'interno del triangolo $ABC$ è tangente a $\omega$ in $Q$.
 	
@@ -123,9 +161,12 @@
 	 $$
 	 \frac{AB\cdot BC}{AD\cdot DC}=\frac{PB^2}{PD^2} .
 	 $$
+	 
 	 \item \textbf{[IMO 2015 - 3]} Sia $ABC$ un triangolo acutangolo con $AB > AC$. Sia $\Gamma$ la sua circonferenza circoscritta, $H$ il suo ortocentro, e $F$ il piede dell'altezza condotta da $A$. Sia $M$ il punto medo di $BC$. Sia $Q$ il punto su $\Gamma$ tale che $\angle HQA = 90^{\circ}$ e sia $K$ il punto su $\Gamma$ tale che $\angle HKQ = 90^{\circ}$. Assumiamo che $A$, $B$, $C$, $K$ e $Q$ sono tutti distinti e giacciono su $\Gamma$ in quest'ordine. 
 	 
 	 Mostrare che le circonferenze circoscritte ai triangoli $KQH$ e $FKM$ sono fra loro tangenti.
-	 %Inversione di centro H che fissa la circonferenza circoscritta ad ABC. K'Q' diviene perpendicolare ad AK' che è l'asse di F'M' e dunque K'Q' è la tangente a K' nella circonferenza circoscritta a F'M'K'.
+	 \begin{sol}Inversione di centro H che fissa la circonferenza circoscritta ad ABC. K'Q' diviene perpendicolare ad AK' che è l'asse di F'M' e dunque K'Q' è la tangente a K' nella circonferenza circoscritta a F'M'K'.
+	 \end{sol}
+
 		
 \end{enumerate}

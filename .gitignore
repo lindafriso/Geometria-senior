@@ -1,3 +1,5 @@
 ##cose
-
 *.log
+*.out
+*.gz
+*.aux

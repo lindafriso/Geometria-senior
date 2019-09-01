@@ -9,6 +9,15 @@ $$\text{distanza}=\frac{Ap+Bq+C}{\sqrt{A^2+B^2}}$$
 
 \item  Potenza di un punto rispetto a una circonferenza
 
+\item Dati due punti $A$ e $B$, trovare il luogo di punti $C$ tali che $AC/BC=\lambda$ costante fissata.\\
+\begin{sol}
+ Pongo $A=(0,0),B=(1,0)$ e wlog $\lambda < 1$. $\frac{\sqrt{x^2+y^2}}{\sqrt{(x-1)^2+y^2}}=\lambda$.\\
+ $\lambda^2 x^2 + \lambda^2 y^2 =x^2-2x+1+y^2$\\
+ $ x^2+y^2+\frac{2}{\lambda^2-1}x - \frac{1}{\lambda^2-1}=0$
+ è un cerchio centrato in $(-\frac{1}{\lambda^2-1},0)$.
+\end{sol}
+
+
 \suspend{enumerate}
 \textbf{Trigonometria}
 \resume{enumerate}
@@ -20,6 +29,23 @@ dove $H$ è l’ortocentro, $O$ è il circocentro, $I$ l’incentro, $H_a$ la pr
 sono definiti $H_b$ e $H_c$ ), $M_a$ il punto medio di $BC$, $A'$ il punto medio dell’arco $BC$ che non contiene
 $A$ nella circonferenza circoscritta ad $ABC$.
 
+\item \textbf{Teorema di Stewart} Sia $ABC$ un triangolo e $P$ un punto sul lato $BC$. Dimostrare la seguente formula: 
+$$AB^2\cdot PC + AC^2 \cdot BP = BC \cdot BP \cdot PC + AP^2 \cdot BC$$
+
+
+\suspend{enumerate}
+\textbf{Complessi}
+\resume{enumerate}
+
+\item \textbf{Allineamento} $A,B,C$ sono allineati se e solo se 
+$$\frac{a-c}{b-c}=\frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
+
+\item \textbf{Perpendicolarità} $AC\perp BC$ se e solo se 
+$$\frac{a-c}{b-c}= - \frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
+
+
+
+
 \suspend{enumerate}
 \textbf{Vario}
 \resume{enumerate}
@@ -29,7 +55,17 @@ $A$ nella circonferenza circoscritta ad $ABC$.
 \item Sia $\Gamma$ una circonferenza fissa e sia $BC$ una corda. Sia $A$ un punto su $\Gamma$ e sia $H$ l'ortocentro di $ABC$.\\
 Determinare al variare di $A$ su $\Gamma$ il luogo geometrico descritto da $H$.
 
-\item Esistenza della circonferenza di Apollonio.
+\item \textbf{Eserciziario Senior 2017, G1 - 12} Sia dato un triangolo $ABC$ e si fissino i punti $A'$,$B'$,$C'$ sui lati opposti ai vertici $A$, $B$,
+$C$, rispettivamente, in modo che le rette $AA'$ , $BB'$ , $CC'$ siano concorrenti in un punto $P$ interno al triangolo. Sia $d$ il diametro del cerchio circoscritto al triangolo $ABC$, e sia $S'$ l’area del triangolo $A'B'C'$.\\
+Dimostrare che $d \cdot S' = AB'\cdot BC'\cdot CA'$.
+
+\item In un triangolo $ABC$, trovare il punto $P$ che minimizza la quantità $AP^2+BP^2+CP^2$.
+
+\begin{sol}
+ $AP^2=(x_A-x_P)^2+(y_A-y_P)^2$, quindi posso risolvere separatamente il trovare la coordinata $x_P$ e $y_P$. 
+ Per $x_P$ bisogna minimizzare $3x_P^2-2x_P(x_A+x_B+x_C)$, che è una parabola con zeri $x=0, \frac{2}{3}(x_A+x_B+x_c)$, quindi $x_P=\frac{x_A+x_B+x_c}{3}$ e $P$ è il baricentro
+\end{sol}
+
 
 
 \end{enumerate}
@@ -61,7 +97,7 @@ Determinare al variare di $A$ su $\Gamma$ il luogo geometrico descritto da $H$.
             
       \item \textbf{Teorema di Vecten } Sia $ABC$ un triangolo e si costruisca un quadrato su ciascuno dei lati di $ABC$, esterno ad esso. Chiamati $O_A,O_B,O_C$ i centri dei tre quadrati, dimostrare che $O_AO_BO_C$ è un triangolo equilatero.
       
-      \item \textbf{Eserciziario Senior 17, G2 -10} Siano $ABMN$ e $BCQP$ i quadrati costruiti sui lati $AB$ e $BC$ di un triangolo, esternamente al triangolo stesso.
+      \item \textbf{Eserciziario Senior 17, G2 - 10} Siano $ABMN$ e $BCQP$ i quadrati costruiti sui lati $AB$ e $BC$ di un triangolo, esternamente al triangolo stesso.
       Dimostrare che i centri di tali quadrati ed i punti medi di $AC$ e $MP$ sono i vertici di un quadrato.
       
       \begin{sol}sia $L$ il centro di $ABMN$ e $R$ di $BCQP$, $J$ il punto medio di $AC$. $LJ$ è parallelo a $MC$ per omotetia di centro $B$ e fattore 2, inoltre dopo una rotazione di $90^{\circ}$ va in $BP$ che è parallelo a $JR$. Da questo si deduce che $LJ=JR$ e sono ortogonali. Analogamente si fa per il punto medio di $MP$

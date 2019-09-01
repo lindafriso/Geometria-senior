@@ -2,22 +2,62 @@
 \subsection{GB - 1, Problemi}
 \begin{itemize}
  \item \textbf{EGMO 2013 - 1} Nel triangolo $ABC$, si prolunghi il lato $BC$ dalla parte di $C$ di un segmento $CD$ tale che $CD=BC$. Si prolunghi poi il lato $CA$ dalla parte di $A$ di un segmento $AE$ tale che $AE= 2CA$.Dimostrare che, se $AD=BE$, allora il triangolo $ABC$ è rettangolo
-\end{itemize}
+ 
+ \item \textbf{IMOSL 1998 - 5} Sia $ABC$ un triangolo, $H$ l'ortocentro, $O$ il circocentro e $R$ il raggio della circonferenza circoscritta. Sia $D$ il simmetrico di $A$ rispetto a $BC$, $E$ il simmetrico di $B$ rispetto $AC$ e $F$ il simmetrico di $C$ rispetto $AB$.\\
+ Dimostrare che $D,E,F$ sono allineati se e solo se $OH=2R$.
+
+ \begin{sol}
+ Complessi con circoscritta = circonferenza unitaria
+\end{sol}
+
+ 
+ 
+ \item \textbf{IMOSL 2015 - G1} Sia $ABC$ un triangolo acutangolo con ortocentro $H$. Sia $G$ il punto per cui il quadrilatero $ABGH$ risulta un parallelogrammo. Sia $I$ il punto della retta $GH$ per cui
+la retta $AC$ biseca il segmento $HI$. Sia $J$ l’ulteriore intersezione tra la retta $AC$ e la
+circonferenza circoscritta al triangolo $GCI$.
+Dimostrare che $IJ = AH$.
+
+\begin{sol}
+ Sia $M=GH\cap AC$, Teorema dei seni su $\triangle IJM$ da $\frac{\sin\alpha}{IJ}=\frac{\sin IMJ}{IJ}=\frac{\sin IJM}{MH}=\frac{\sin IGC}{MH}$ per la ciclicità di $GCIJ$. Teorema dei seni su $\triangle MAH$ da $\frac{\sin\alpha}{AH}=\frac{\sin CJH}{MH}$. Per la tesi basta dimostrare che $\widehat{CGH}=\widehat{CAH}=90-\gamma$, ma $CHG$ è rettangolo e $CH=c\cdot cotg(\gamma)=HG\cdot cotg(\gamma)$.
+\end{sol}
+
+\item \textbf{ITA TST 2016 - 1} Sia $ABCD$ un quadrilatero. Supponiamo che esista un punto $P$ interno al quadrilatero
+tale che $\angle APD = \angle BPC = 90^\{circ}$ e $PA \cdot PD = PB \cdot PC$. Sia $O$ il circocentro di $\trinagle CPD$.\\
+Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
+ 
+ \end{itemize}
 
 \subsection{GB - 2, Problemi}
  \begin{itemize}
-     \item \textbf{IMOSL2013 - G2}  Sia $ABC$ un triangolo, e sia $\omega$ la sua circonferenza circoscritta.  Siano $M$ il punto medio di $AB$, $N$ il punto medio di $AC$, $T$ il punto medio dell’arco $BC$ di $\omega$ che noncontiene $A$. La circonferenza circoscritta al triangolo $AMT$ interseca l’asse di $AC$ in un punto $X$ interno al triangolo $ABC$. La circonferenza circoscritta al triangolo $ANT$ interseca l’asse di $AB$ in un punto $Y$ interno al triangolo $ABC$. Le rette $MN$ e $XY$ si intersecano in $K$ .
-     
-     Dimostrare che $KA=KT$.
-     
-     \begin{sol}La simmetria rispetto all'asse di $AT$ manda $M$ in $X$ e $N$ in $Y$, quindi $K$ rimane fisso e sta sull'asse.
-     \end{sol}
-     
-     \item \textbf{EGMO 2016 - 4} Due circonferenze aventi lo stesso raggio, $\omega_1$ e $\omega_2$ , si intersecano in due punti distinti $X_1$ and $X_2$ . Si consideri una circonferenza $\omega$ tangente esternamente a $\omega_1$ nel punto $T_1$ e internamente a $\omega_2$ nel punto $T_2$ . Si dimostri che il punto d’intersezione fra le rette $X_1T_1$ e $X_2T_2$ giace su $\omega$.
-     
-      \begin{sol}
-      Inversione in $X_1$
-      \end{sol}
+    \item \textbf{IMOSL2013 - G2}  Sia $ABC$ un triangolo, e sia $\omega$ la sua circonferenza circoscritta.  Siano $M$ il punto medio di $AB$, $N$ il punto medio di $AC$, $T$ il punto medio dell’arco $BC$ di $\omega$ che noncontiene $A$. La circonferenza circoscritta al triangolo $AMT$ interseca l’asse di $AC$ in un punto $X$ interno al triangolo $ABC$. La circonferenza circoscritta al triangolo $ANT$ interseca l’asse di $AB$ in un punto $Y$ interno al triangolo $ABC$. Le rette $MN$ e $XY$ si intersecano in $K$.\\
+    Dimostrare che $KA=KT$.
+    
+    \begin{sol}La simmetria rispetto all'asse di $AT$ manda $M$ in $X$ e $N$ in $Y$, quindi $K$ rimane fisso e sta sull'asse.
+    \end{sol}
+    
+    \item \textbf{EGMO 2016 - 4} Due circonferenze aventi lo stesso raggio, $\omega_1$ e $\omega_2$ , si intersecano in due punti distinti $X_1$ and $X_2$ . Si consideri una circonferenza $\omega$ tangente esternamente a $\omega_1$ nel punto $T_1$ e internamente a $\omega_2$ nel punto $T_2$.\\ Si dimostri che il punto d’intersezione fra le rette $X_1T_1$ e $X_2T_2$ giace su $\omega$.
+    \begin{sol}
+    Inversione in $X_1$
+    \end{sol}
+    
+    \item \textbf{Allenamenti EGMO 2019 G6}
+    Dato il triangolo $\Delta ABC$ consideriamo $\omega_B$ la circonferenza passante per A, B e tangente in A al lato AC e, simmetricamente, $\omega_C$ la circonferenza passante per A, C e tangente in A al lato AB. Sia D il punto di intersezione di $\omega_B$ e $\omega_C$ , e sia E il punto sulla retta AD tale che $AD = DE$.\\
+    Dimostrare che E sta sulla circonferenza circoscritta al triangolo $\triangle ABC$.
+
+    \begin{sol}
+    invertire in A.
+    \end{sol}
+
+    \item \textbf{Senior 2013 TF}
+    Sia $ABC$ un triangolo. Sia D l’ulteriore intersezione tra la circonferenza passante per C e tangente alla retta AB in A e la circonferenza passante per B e tangente alla retta AC in A.
+    Sia E il punto sulla retta AB (diverso da A) tale che $BA = BE$. Sia F l’ulteriore intersezione tra la retta AC e la circonferenza circoscritta al triangolo $ADE$.\\
+    Dimostrare che $AC = AF$.
+
+    \begin{sol}
+    Invertire in A.
+    \end{sol}
+
+    
     
 	\item \textbf{IMOSL2011 - G4} Sia $ABC$ un triangolo acutangolo e $\Gamma$ la sua circonferenza circoscritta. Sia $B_0$ il punto medio di $AC$ e $C_0$ il punto medio di $AB$. Sia $D$ il piede dell'altezza da $A$ su $BC$ e sia $G$ il baricentro di $ABC$. Sia $\omega$ la circonferenza passante per $B_0,C_0$ e tangente a $\Gamma$ in un punto $X\neq A$. 
 	
@@ -30,6 +70,9 @@
 	
 	Sia $T$ l'intersezione delle tangenti a $\Gamma$ per A,X e di $B_0C_0$, è centro radicale di $\Gamma, \omega$ e la circoscritta a $AB_0C_0$. ATXYO è ciclico, l'immagine sotto inversione è la retta XDY. Ora basta mostrare DY intersecato la mediana $AA_0$ è G, ma $AD$ è il doppio di $XA_0$ e sono paralleli, quindi l'intersezione è proprio G.
 	\end{sol}
+	
+
+
 	\end{itemize}
 	
 	

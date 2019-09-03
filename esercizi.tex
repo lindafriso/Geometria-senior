@@ -37,10 +37,10 @@ $$AB^2\cdot PC + AC^2 \cdot BP = BC \cdot BP \cdot PC + AP^2 \cdot BC$$
 \textbf{Complessi}
 \resume{enumerate}
 
-\item \textbf{Allineamento} $A,B,C$ sono allineati se e solo se 
+\item (\emph{Proposto come fatto in GM1 senza soluzione}) \textbf{Allineamento} $A,B,C$ sono allineati se e solo se 
 $$\frac{a-c}{b-c}=\frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
 
-\item \textbf{Perpendicolarità} $AC\perp BC$ se e solo se 
+\item (\emph{Proposto come fatto in GM1 senza soluzione}) \textbf{Perpendicolarità} $AC\perp BC$ se e solo se 
 $$\frac{a-c}{b-c}= - \frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
 
 
@@ -213,6 +213,29 @@ Dimostrare che $d \cdot S' = AB'\cdot BC'\cdot CA'$.
 	$$
 	
 	Mostrare che l'intersezione delle circonferenze circoscritte a $ABX$ e $CDX$ dove $AC$ e $BD$ sono segmenti non paralleli le cui rette si intersecano in $X$, è il centro della rotomotetia che manda $A$ in $B$ e $C$ in $D$. 
+	
+	\textbf{Soluzione:} Sia $x$ il centro della rotomotetia, $\alpha$ il numero complesso che rappresenta la rotomotetia - ovvero l'argomento di $\alpha$ è l'angolo di rotazione e il modulo di $\alpha$ è la ragione della rotomotetia. Se manda $a$ in $b$, allora 
+	$$
+	b-x = (a-x)\alpha ,
+	$$
+	e poiché manda $c$ in $d$ si ha anche 
+	$$
+	d-x = (c-x)\alpha.
+	$$
+	Dunque per confronto 
+	$$
+	\frac{b-x}{a-x}=\frac{d-x}{c-x}
+	$$
+	da cui 
+	$$
+	(b-x)(c-x)=(d-x)(a-x)\Rightarrow x=\frac{ad-bc}{a-b-c+d}.
+	$$
+	
+	Svolgendo i calcoli si ha infine
+	
+	$$
+	\alpha=\frac{b-d}{a-c}.
+	$$
 	\item \textbf{[Una caratterizzazione della \textit{polare} come luogo dei \emph{quarti armonici}]} Sia $\gamma$ la circonferenza unitaria centrata nell'origine e sia $P$ un punto qualsiasi. Siano $r$ ed $s$ la polare di $P$ rispetto a $\Gamma$ e una retta passante per $P$ rispettivamente. 
 		\begin{itemize}
 		\item Mostrare che $r$ ha equazione
@@ -251,6 +274,17 @@ Dimostrare che $d \cdot S' = AB'\cdot BC'\cdot CA'$.
 	\end{equation}
 	
 	Ciclando opportunamente, calcolare le coordinate dei vertici del triangolo tangenziale (\textit{i.e.} il triangolo formato dalle intersezione delle tangenti condotte da $A$, $B$ e $C$ alla circonferenza circoscritta ad $ABC$).
+	\textbf{Soluzione:}
+	Calcoliamo le coordinate di $P$, intersezione della tangente condotta da $A$ alla circoscritta e $BC$. Risulta che 
+	$$
+	P=[0:-b^2:c^2]
+	$$
+	da cui si ottiene subito che la tangente, dovendo passare per $A=[1:0:0]$ è
+	$$
+	c^2y+b^2z=0.
+	$$
+	
+	Ciclando si ottiene che i vertici del triangolo tangenziale sono $[a^2:b^2:-c^2]$ e ciclici.
 	\item Sia dato un triangolo $ABC$ e un punto $P$ di coordinate baricentriche $[u:v:w]$ scegliendo come triangolo referenziale $ABC$.
 		\begin{itemize}
 			\item \textbf{[Proiezione di un punto sui lati in baricentriche]} Mostra che, dette $P_A$, $P_B$ e $P_C$ le proiezioni di $P$ sui lati $BC$, $CA$ e $AB$, si ottiene

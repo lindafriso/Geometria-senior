@@ -95,10 +95,77 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 \begin{enumerate}
 	\item \textbf{[BMO 2009 - 2]} Sia $MN$ una segmento parallelo al lato $BC$ del triangolo $ABC$, con $M$ sul lato $AB$ e $N$ sul lato $AC$. Le rette $BN$ e $CM$ si incontrano in $P$. Le circonferenze circoscritte a $BMP$ e $CNP$ si incontrano in due punti distinti $P$ e $Q$. 
 	
-	Mostrare che $\angle BAQ = \angle CAP$.
+	Mostrare che $\angle BAQ = \angle PAC$.
+	
+	\textbf{Soluzione:} Diciamo che $a$ è l'origine del nostro piano di Gauss, mentre $b$ e $c$ sono due generici punti. Visto che $mn\parallel bc$ e $m\in ab$, $m\in ac$ si ha che esiste $\lambda \in \mathbb R$ tale che $m=\lambda b$ e $n=\lambda c$. Essendo $q$ il centro della rotomotetia che manda $m$ in $b$ e $c$ in $n$, allora 
+	$$
+	q=\frac{mn-bc}{m+n-b-c}=\frac{\lambda^2bc-bc}{\lambda b+\lambda c-b-c}=\frac{(\lambda+1)bc}{b+c}.
+	$$
+	
+	Per trovare trovare $p$ basterebbe imporre $p\in mc$ e $p\in bn$. \emph{Proporlo come esercizio}. D'altra parte non ce n'è bisogno: infatti noi siamo interessati poi solo all'angolo $\angle CAP$ e dunque non tanto ci servono le coordinate di $P$ quanto capire chi è la retta $AP$, che è la mediana di $ABC$. Dunque possiamo dire che esiste un certo $\eta$ reale tale che 
+	$$
+	p=\eta(b+c).
+	$$ 
+	
+	Per l'equazione dell'angolo, se $\theta=\angle BAQ$ si ha 
+	$$
+	e^{2i\theta}=\frac{q-a}{b-a}\frac{\bar b-\bar a}{\bar q-\bar a}=\frac{c(\bar b+\bar c)}{\bar c(b+c)},
+	$$
+	mentre se $\theta'=\angle PAC$ si ha 
+	$$
+	e^{2i\theta'}=\frac{c-a}{p-a}\frac{\bar p-\bar a}{\bar c-\bar a}=\frac{c(\bar b+\bar c)}{\bar c(b+c)}.
+	$$
+	
+	Da ciò, con un attimo di discussione, si ottiene che $\theta=\theta'$ che implica la tesi. 
+	
 	\item \textbf{[RMM 2012 - 2]} Sia $ABC$ un triangolo non isoscele e siano $D$, $E$ e $F$ rispettivamente i punti medi dei lati $BC$, $CA$ e $AB$. La circonferenza $BCF$ e la retta $BE$ si intersecano nuovamente in $P$ e la circonferenza $ABE$ e la retta $AD$ in $Q$. Le rette $DP$ e $FQ$ si incontrano in $R$. 
 	
 	Mostrare che il baricentro $G$ del triangolo $ABC$ giace sulla circonferenza circoscritta al triangolo $PQR$.
+	
+	\textbf{Soluzione:} Per mostrare la ciclità è sufficiente mostrare che, detto $\theta=\angle GPD$ e $\theta'=\angle GQF$, si ha 
+	$$
+	\theta=\theta'.
+	$$  
+	Dall'equazione dell'angolo risulta che per fare ciò è sufficiente mostrare
+	$$
+	\frac{d-p}{g-p}\frac{g-q}{f-q}\in\mathbb R.
+	$$
+	Il problema è dunque spostato a trovare i punti $p$ e $q$. Qui usiamo un'osservazione sintetica. Si ha che 
+	$$
+	\angle GDE=\angle GAB = \angle QEG,
+	$$
+	dove la prima è vera per il parallelismo $AB\parallel ED$ e la seconda è vera poiché $ABEQ$ è ciclico. 
+	Analogamente si ha $\angle EQD=\angle GED$ e dunque i triangoli $GDE$ e $GEQ$ sono ordinatamente simili.
+	Dunque, scegliendo $g=0$, risulta, visto che $GD\cdot GQ=GE^2$,
+	$$
+	q=d\frac{|e|^2}{|d|^2}=\frac{e\bar e}{\bar d}
+	$$
+	e analogamente 
+	$$
+	p=\frac{f\bar f}{\bar e}.
+	$$
+	A questo punto 
+	$$
+	\frac{d-p}{g-p}\frac{g-q}{f-q}=\frac{(d\bar e-f\bar f)e\bar e}{(f\bar d-e\bar e)f\bar f}
+	$$
+	e poiché, essendo $g=0$, si ha $d+e+f=0$, la precedente espressione è uguale a 
+	$$
+	\frac{|e|^2}{|f|^2}
+	$$ 
+	che è un numero reale, come si voleva.
+%	Dall'equazione dell'angolo si ha 
+%	$$
+%	e^{2i\theta}=\frac{d-p}{g-p}\frac{\bar g-\bar p}{\bar d-\bar p}%=\frac{f\bar f-d\bar e}{f\bar f-\bar d e}
+%	$$
+%	e 
+%	$$
+%	e^{2i\theta'}=\frac{f-q}{g-q}\frac{\bar g-\bar q}{\bar f-\bar q}%=\frac{e\bar e-f\bar d}{e\bar e-\bar f d}.
+%	$$
+%	Per mostrare che $e^{2i\theta}=e^{2i\theta'}$, e dunque $\theta=\theta'$ e dunque la tesi, è sufficiente mostrare che 
+	
+	che segue poiché $d+e+f=0$, essendo $g=0$, e sostituendo. 
+	
+	
 	\item \textbf{[USAMO 2016 - Day 2 - 2]} Un pentagono equilatero $AMNPQ$ è inscritto in un triangolo $ABC$ in modo che $M\in AB$, $Q\in AC$ e $N,p \in BC$. Sia $S$ l'intersezione di $MN$ e $PQ$ e denotiamo con $l$ la bisettrice di $\angle MSQ$. 
 	
 	Mostrare che, detto $I$ l'incentro di $ABC$, $OI$ è parallelo a $l$.
@@ -113,6 +180,9 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 	\item \textbf{[IMO 2012 - 1]} Dato un triangolo $ABC$, sia $J$ il centro della circonferenza ex-inscritta opposta al vertice $A$, la quale tange $BC$ in $M$ e le rette $AB$ e $AC$ in $K$ e $L$ rispettivamente. Le rette $LM$ e $BJ$ si intersecano in $F$ e le rette $KM$ e $CJ$ si intersecano in $G$. Sia $S$ il punto d'intersezione fra $AF$ e $BC$ e sia $T$ il punto d'intersezione fra $AG$ e $BC$. 
 	
 	Mostrare che $M$ è il punto medio di $ST$.
+	
+	\textbf{Soluzione:}
+	
 	\item \textbf{[IMO SL 2011 - 4]} Sia $ABC$ un triangolo acutangolo scaleno, e sia $\gamma$ la sua circonferenza circoscritta.
 	Siano $A_0$ il punto medio di BC, $B_0$ il punto medio di $AC$ e $C_0$ il punto medio di $AB$. Sia
 	$D$ il piede dell’altezza uscente da $A$, $D_0$ la proiezione di $A_0$ sulla retta $B_0C_0$ e $G$ il
@@ -125,6 +195,12 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 	\item \textbf{[USA TST 2012 - December Test - 1]} In un triangolo acutangolo $ABC$ si ha $\angle A<\angle B$ e $\angle A<\angle C$. Sia $P$ un punto variabile su $BC$. I punti $D$ e $E$ giacciono su $AB$ e $AC$ rispettivamente in modo che $BP=PD$ e $CP=PE$.
 	
 	Mostrare che al variare di $P$ sul segmento $BC$, la circonferenza circoscritta al triangolo $ADE$ passa per un punto fisso oltre $A$.
+	\item  \textbf{[IMO 2019 - 6]} 
+	Sia $I$ l'incentro di un triangolo acutangolo $ABC$ con $AB\neq AC$. La circonferenza inscritta $\omega$ di $ABC$ è tangente a $BC$, $CA$ e $AB$ in $D$, $E$ e $F$ rispettivamente. La retta per $D$ e perpendicolare ad $EF$ interseca $\omega$ di nuovo in $R$ e la retta $AR$ interseca $\omega$ di nuovo in $P$. Sia $Q$ la seconda intersezione, diversa da $P$, delle circonferenze circoscritte ai triangoli $PBF$ e $PCE$.
+	
+	Mostrare che le rette $DI$ e $PQ$ si incontrano su una retta per $A$ perpendicolare ad $AI$.
+	
+	\textbf{Soluzione:} Usare come circonferenza unitaria la circonferenza inscritta. Consulta \url{https://artofproblemsolving.com/community/c6h1876745p12752769}.
 \end{enumerate}
 \clearpage
 \subsection{GM - 2, Problemi}

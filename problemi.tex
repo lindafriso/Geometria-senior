@@ -201,6 +201,18 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 	Mostrare che le rette $DI$ e $PQ$ si incontrano su una retta per $A$ perpendicolare ad $AI$.
 	
 	\textbf{Soluzione:} Usare come circonferenza unitaria la circonferenza inscritta. Consulta \url{https://artofproblemsolving.com/community/c6h1876745p12752769}.
+	
+	\item \textbf{[MOP 2006]} Sia $ABC$ un triangolo inscritto in una circonferenza $\omega$. $P$ giace su $BC$ in modo tale che $PA$ è tangente a $\omega$. La bisettrice di $\angle APB$ interseca i segmenti $AB$ e $AC$ rispettivamente in $D$ ed $E$ e i segmenti $BE$ e $CD$ si intersecano in $Q$. Supponiamo che la retta $PQ$ passi per il centro di $\omega$. 
+	
+	Calcolare $\angle BAC$.
+	
+	\item \textbf{[USAMO 2001]} Sia $ABC$ un triangolo di circonferenza inscritta $\omega$. Siano $D_1$ ed $E_1$ i punti in cui $\omega$ tange $BC$ e $AC$ rispettivamente. Siano $D_2$ ed $E_2$ i punti sui lati $BC$ e $AC$ rispettivamente tali che $CD_2=BD_1$ e $CE_2=AE_1$ e sia $P$ il punto d'intersezione dei segmenti $AD_2$ e $BE_2$. La circonferenza $\omega$ interseca il segmento $AD_2$ in due punti, il più vicino dei quali al vertice $A$ sia detto $Q$. 
+	
+	Mostrare che $AQ=D_2P$.
+	
+	\textbf{Soluzione:} Scrivere tutti i punti in coordinate baricentriche normalizzate. Per trovare $Q$ notare che $I$ è il punto medio di $QD_1$. Infine per mostrare $AQ=D_2P$ usare i displacement dati i punti con le coordinate normalizzate. 
+	
+
 \end{enumerate}
 \clearpage
 \subsection{GM - 2, Problemi}
@@ -270,6 +282,8 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 	Sia $\Omega$ la circonferenza circoscritta ad un triangolo $ABC$. La circonferenza $\omega$ è tangente ai lati $AC$ e $BC$ e internamente alla circonferenza $\Omega$ in un punto $P$. Una retta parallela ad $AB$ che interseca l'interno del triangolo $ABC$ è tangente a $\omega$ in $Q$.
 	
 	Mostrare che $\angle ACP = \angle QCB$.
+	
+	\textbf{Soluzione:} Per inversione più simmetria $AP$ è la simmetrica della ceviana di Nagel rispetto alla bisettrice, che , per omotetia, coincide con $AQ$.
 	\item \textbf{[IMO SL 2003 - 4]}
 	 Siano  $\Gamma_1$, $\Gamma_2$, $\Gamma_3$, $\Gamma_4$ 
 	 circonferenze distinte tali che
@@ -285,6 +299,19 @@ Dimostrare che la retta $OP$ passa per il punto medio di $AB$.
 	 Mostrare che le circonferenze circoscritte ai triangoli $KQH$ e $FKM$ sono fra loro tangenti.
 	 \begin{sol}Inversione di centro H che fissa la circonferenza circoscritta ad ABC. K'Q' diviene perpendicolare ad AK' che è l'asse di F'M' e dunque K'Q' è la tangente a K' nella circonferenza circoscritta a F'M'K'.
 	 \end{sol}
+ 
+ \item \textbf{[USAMO 2006]} 
+ Sia $ABCD$ un quadrilatero e siano $E$ e $F$ punti su $AD$ e $BC$ rispettivamente tali che $AE/ED=BF/FC$.
+ La retta $FE$ incontra $BA$ e $CD$ in $S$ e $T$ rispettivamente. 
+ 
+ Mostrare che le circonferenze circoscritte ai triangoli $SAE$, $SBF$, $TCF$ e $TDE$ passano per uno stesso punto.
+
+ \textbf{Soluzione:} Innanzitutto Per Miquel sui quadrangoli sappiamo che le circonferenze circoscritte ai triangoli $SAE$, $SBF$ e $ABX$ concorrono; così come le circonferenze circoscritte ai triangoli $TCF$, $TDE$ e $XCD$. Quindi, essendo la tesi vera, l'intersezione delle quattro circonferenze deve essere l'altra intersezione fra le circonferenze $XAB$ e $XCD$. Sia $Y$ questa intersezione. Per quanto visto sulle rotomotetie, questo punto è il centro della rotomotetia che manda $BC$ in $AD$ e dunque, visti i rapporti fra i segmenti, deve mandare $F$ in $E$. Allora 
+ $$
+ \angle YFB=\angle YEX
+ $$
+ e dunque $Y$ è sulla circonferenza circoscritta a $XEF$ e pertanto, per Miquel, anche su quella circoscritta a $SAE$ e $SBF$.
+ 
 
 		
 \end{enumerate}

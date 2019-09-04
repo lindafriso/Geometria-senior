@@ -46,6 +46,467 @@ $$\frac{a-c}{b-c}= - \frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}
 
 
 
+\section{Esercizi Basic}
+\subsection{GB-1, Esercizi}
+\textbf{Analitica}
+\begin{enumerate}
+\item  Dimostrare la formula distanza di un punto di coordinate $(p,q)$ dalla retta di equazione $Ax+By+C=0$:
+
+$$\text{distanza}=\frac{Ap+Bq+C}{\sqrt{A^2+B^2}}$$
+
+\item  Potenza di un punto rispetto a una circonferenza
+
+\item Dati due punti $A$ e $B$, trovare il luogo di punti $C$ tali che $AC/BC=\lambda$ costante fissata.\\
+\begin{sol}
+ Pongo $A=(0,0),B=(1,0)$ e wlog $\lambda < 1$. $\frac{\sqrt{x^2+y^2}}{\sqrt{(x-1)^2+y^2}}=\lambda$.\\
+ $\lambda^2 x^2 + \lambda^2 y^2 =x^2-2x+1+y^2$\\
+ $ x^2+y^2+\frac{2}{\lambda^2-1}x - \frac{1}{\lambda^2-1}=0$
+ è un cerchio centrato in $(-\frac{1}{\lambda^2-1},0)$.
+\end{sol}
+
+
+\suspend{enumerate}
+\textbf{Trigonometria}
+\resume{enumerate}
+
+\item  Calcolare, in termini dei lati e degli angoli del triangolo $ABC$, le seguenti lunghezze: 
+
+$$AH, HH_a , BH_a , H_bH_c , OM_a , OH, AI, IA' , IO$$
+dove $H$ è l’ortocentro, $O$ è il circocentro, $I$ l’incentro, $H_a$ la proiezione di $H$ su $BC$ (e similmente
+sono definiti $H_b$ e $H_c$ ), $M_a$ il punto medio di $BC$, $A'$ il punto medio dell’arco $BC$ che non contiene
+$A$ nella circonferenza circoscritta ad $ABC$.
+
+\item \textbf{Teorema di Stewart} Sia $ABC$ un triangolo e $P$ un punto sul lato $BC$. Dimostrare la seguente formula: 
+$$AB^2\cdot PC + AC^2 \cdot BP = BC \cdot BP \cdot PC + AP^2 \cdot BC$$
+
+
+\suspend{enumerate}
+\textbf{Complessi}
+\resume{enumerate}
+
+\item (\emph{Proposto come fatto in GM1 senza soluzione}) \textbf{Allineamento} $A,B,C$ sono allineati se e solo se 
+$$\frac{a-c}{b-c}=\frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
+
+\item (\emph{Proposto come fatto in GM1 senza soluzione}) \textbf{Perpendicolarità} $AC\perp BC$ se e solo se 
+$$\frac{a-c}{b-c}= - \frac{\overline{a}-\overline{c}}{\overline{b}-\overline{c}}$$
+
+
+
+
+\suspend{enumerate}
+\textbf{Vario}
+\resume{enumerate}
+
+\item Teoremi di Napoleone e Vecten (enunciato in G2)
+
+\item Sia $\Gamma$ una circonferenza fissa e sia $BC$ una corda. Sia $A$ un punto su $\Gamma$ e sia $H$ l'ortocentro di $ABC$.\\
+Determinare al variare di $A$ su $\Gamma$ il luogo geometrico descritto da $H$.
+
+\item \textbf{Eserciziario Senior 2017, G1 - 12} Sia dato un triangolo $ABC$ e si fissino i punti $A'$,$B'$,$C'$ sui lati opposti ai vertici $A$, $B$,
+$C$, rispettivamente, in modo che le rette $AA'$ , $BB'$ , $CC'$ siano concorrenti in un punto $P$ interno al triangolo. Sia $d$ il diametro del cerchio circoscritto al triangolo $ABC$, e sia $S'$ l’area del triangolo $A'B'C'$.\\
+Dimostrare che $d \cdot S' = AB'\cdot BC'\cdot CA'$.
+
+\item In un triangolo $ABC$, trovare il punto $P$ che minimizza la quantità $AP^2+BP^2+CP^2$.
+
+\begin{sol}
+ $AP^2=(x_A-x_P)^2+(y_A-y_P)^2$, quindi posso risolvere separatamente il trovare la coordinata $x_P$ e $y_P$. 
+ Per $x_P$ bisogna minimizzare $3x_P^2-2x_P(x_A+x_B+x_C)$, che è una parabola con zeri $x=0, \frac{2}{3}(x_A+x_B+x_c)$, quindi $x_P=\frac{x_A+x_B+x_c}{3}$ e $P$ è il baricentro
+\end{sol}
+
+
+
+\end{enumerate}
+
+
+\subsection{GB-2, Esercizi}
+\begin{enumerate}
+       \item Fare i conti per traslazioni, rotazioni, riflessioni, inversione in complessi. 
+       
+       \suspend{enumerate}
+       \textbf{Simmetrie}
+       \resume{enumerate}
+
+       \item \textbf{Problema di Fagnano} Sia $ABC$ un triangolo acutangolo, $P,Q,R$ tre punti variabili sui lati $BC,AC,AB$ rispettivamente. Per quale posizione dei tre punti il perimetro del triangolo $PQR$ è minimo?
+       
+      \begin{sol}Sia $P_1$ il simmetrico di $P$ rispetto $AB$ e $P_2$ rispetto $AC$. Allora il perimetro $PR+RQ+QP=P_1R+RQ+QP_2$ è la lunghezza della spezzata $P_1RQP_2$, fissato P è minimo se i quattro punti sono allineati. Inoltre $\widehat{P_1AP_2}=2\cdot\widehat{BAC}$ e $AP_1=AP_2=AP$, quindi $P_1P_2=AP \sin{\widehat{BAC}}$ è minimo quando è minimo $AP$. Quindi $P$ è piede dell'altezza da $A$, e in tale caso anche $Q$ e $R$ lo sono
+       \end{sol}
+      
+       \suspend{enumerate}
+       \textbf{Rotazioni}
+       \resume{enumerate}
+      
+       \item \textbf{Teorema di Napoleone} Sia $ABC$ un triangolo e si costruisca un triangolo equilatero su ciascuno dei lati di $ABC$, esterno ad esso. Chiamati $O_A,O_B,O_C$ i centri dei tre triangoli, dimostrare che $O_AO_BO_C$ è un triangolo equilatero.
+     
+      \begin{sol}Siano $A_1,B_1,C_1$ i vertici dei triangoli equilateri. $BA=\sqrt{3}BO_C$ e analogamente per gli altri lati. Una rotazione di 30 centrata in $B$ manda $BO_C$ in $BA$ e $BO_A$ in $BA_1$. Il triangolo $BO'_CO_A'$ è simile a $BAA_1$, quindi per Talete $O_CO_A=O'_CO'_A=\frac{1}{\sqrt{3}}AA_1=O_BO_C$. Quindi i tre lati sono uguali.
+     
+      Si fa benissimo in complessi (per G1). Su cut-the-knot ci sono tanti approcci.\cite{napoleoncomplex}
+      \end{sol}
+            
+      \item \textbf{Teorema di Vecten } Sia $ABC$ un triangolo e si costruisca un quadrato su ciascuno dei lati di $ABC$, esterno ad esso. Chiamati $O_A,O_B,O_C$ i centri dei tre quadrati, dimostrare che $O_AO_BO_C$ è un triangolo equilatero.
+      
+      \item \textbf{Eserciziario Senior 17, G2 - 10} Siano $ABMN$ e $BCQP$ i quadrati costruiti sui lati $AB$ e $BC$ di un triangolo, esternamente al triangolo stesso.
+      Dimostrare che i centri di tali quadrati ed i punti medi di $AC$ e $MP$ sono i vertici di un quadrato.
+      
+      \begin{sol}sia $L$ il centro di $ABMN$ e $R$ di $BCQP$, $J$ il punto medio di $AC$. $LJ$ è parallelo a $MC$ per omotetia di centro $B$ e fattore 2, inoltre dopo una rotazione di $90^{\circ}$ va in $BP$ che è parallelo a $JR$. Da questo si deduce che $LJ=JR$ e sono ortogonali. Analogamente si fa per il punto medio di $MP$
+      \end{sol}
+      
+       \suspend{enumerate}
+       \textbf{Omotetia}
+       \resume{enumerate}
+       
+       	\item Sia $ABC$ un triangolo, $\omega$ la circonferenza inscritta tangente a $BC$ in $D$. Sia $M$ il punto medio di $BC$ e $E$ il simmetrico di $D$ rispetto a $M$. Sia $T$ il diametralmente opposto a $D$ in $\omega$. \\
+       	Dimostrare che $A,T,E$ sono allineati.
+       	
+       	\item Siano $\Gamma$ e $\omega$ due circonferenza tangenti internamente in $P$, con $\omega$ all'interno di $\Gamma$. Sia $AB$ una corda di $\Gamma$ tangente a $\omega$ in un punto $T$.\\
+       	Dimostrare che $PT$ è la bisettrice di $APB$.
+       	
+       	
+       
+       \suspend{enumerate}
+       \textbf{Omotetia+Simmetria}
+       \resume{enumerate}
+       
+       \item  \textbf{[Lemma della \textit{simmediana}]} Sia $ABC$ un triangolo inscritto in una circonferenza $\gamma$. Le tangenti a $\gamma$ in $B$ e $C$ si intersecano in $P$.
+    
+       Mostrare che $AP$ è \textit{simmediana} relativa a $BC$, \textit{i.e.} simmetrica della mediana relativa a $BC$ rispetto alla bisettrice dell'angolo $\angle BAC$.   
+       
+       \begin{sol}
+       Sia $\omega$ la circonferenza di centro $P$ e raggio $PB$. $\Omega\cap AB=D$, $\Omega\cap AC=E$. Per angle chasing $DPE$ allineati è $DE$ è antiparallelo a $BC$, quindi simmetria+omotetia manda $ABC$ in $AED$ e $AM$ in $AP$ in quanto mediane, da cui $AP$ simmediana.
+       \end{sol}
+
+       
+       \suspend{enumerate}
+       \textbf{Inversione}
+       \resume{enumerate}
+       \item Data l'inversione di centro $O$ e raggio $R$, due punti $A$ e $B$ vanno in $A'$ e $B'$. Determinare la lunghezza di $A'B'$ conoscendo le lunghezze di $OA,OB,AB$.
+
+       
+       \item \textbf{Teorema di Tolomeo} Sia $ABCD$ un quadrilatero, $AC\cdot BD\leq AD\cdot BC + AB\cdot CD$ e l'uguale vale sse $ABCD$ è ciclico.
+       
+       
+       	 \item \textbf{[Teorema di Feuerbach]} Mostrare che la circonferenza di Feuerbach è tangente alla circonferenza inscritta e alle circonferenze exinscritte.
+    
+    \begin{sol} Sia $M$ il punto medio di $BC$ e $D$ e $G$ rispettivamente i punti in cui la circonferenza inscritta e quella ex-inscritta opposta ad $A$ incontrano $BC$. Invertire in $M$ con raggio $MD$.
+
+    Per prima cosa si nota che il piede della perpendicolare e il piede della bisettrice su BC si scambiano perché $MH\cdot MI=MD^2$. Inoltre si mostra passando per la circoscritta che la retta immagine della circonferenza dei nove punti fa un angolo di beta - gamma con BC. Dunque la cfr dei nove punti va nella simmetrica della retta BC rispetto alla bisettrice che tange entrambe le circonferenze inscritta ed exinscritta. Inoltre queste due si scambiano
+    \end{sol}
+       
+       \suspend{enumerate}
+       \textbf{Inversione+Simmetria}
+       \resume{enumerate}       
+      
+    
+	 \item  \textbf{[Lemma della \textit{simmediana}]} Sia $ABC$ un triangolo inscritto in una circonferenza $\gamma$. Le tangenti a $\gamma$ in $B$ e $C$ si intersecano in $P$.
+    
+     Mostrare che $AP$ è \textit{simmediana} relativa a $BC$, \textit{i.e.} simmetrica della mediana relativa a $BC$ rispetto alla bisettrice dell'angolo $\angle BAC$.    
+    
+
+	
+
+ \end{enumerate}
+
+
+\subsection{GB-3, Esercizi}
+\begin{enumerate}
+
+	\item \emph{[Copiato da GM]} Sia $ABC$ un triangolo con ortocentro $H$ e siano $D$, $E$ e $F$ i piedi delle altezze che cadono sui lati $BC$, $CA$ e $AB$ rispettivamente. Sia $T=EF\cap BC$.
+	
+	Mostrare che $TH$ è perpendicolare alla mediana condotta da $A$.
+	
+	\begin{sol}Oltre alla soluzione per inversione, pensavo anche qualcosa con gli assi radicali: il centro radicale delle circonferenze per $AEFH, BCH, ABEF$ è T, quindi TH passa per l'intersezione di AEFH e BCH che chiamo P. Allora APH è retto in quanto diametro
+
+
+    inversione di centro A e raggio $AH\cdot HD$. La tesi diventa equivalente a mostrare che la circonferenza per D (immagine di H), per l'intersezione della circoscritta con AEF (immagine di T) e A ha la retta AM come diametro. Questo segue perché in effetti $M,T',A,D$ sono ciclici
+	\end{sol}
+	
+	
+	\item Sia $ABC$ un triangolo, $E,F$ i piedi delle altezze su $AC,AB$. Sia $H$ l'ortocentro, $M$ il punto medio di $BC$ e $Q$ l'intersezione più vicina ad $A$ di $HM$ con la circoscritta $\Gamma$. Sia $T=EF\cap BC$. Dimostrare che $T,Q,A$ sono allineati.
+	
+	\begin{sol} Usare due fatti 1) Il punto Q è l'intersezione di $\Gamma$ con la circonferenza di diametro $AH$ ed è allineato con H,M e il simmetrico di A rispetto O 2) Assi radicali di AQH, ABC, BCEF.
+	\end{sol}	
+	
+	\item Sia $ABC$ un triangolo con $I$ incentro e $I_A$ centro della circonferenza ex-inscritta relativa ad $A$. Sia $\Gamma$ la circonferenza circoscritta ad $ABC$ e sia $M$ il punto medio dell'arco $BC$ non contenente $A$.
+	
+	Dimostrare che $B,I,C,I_A$ si trovano su una stessa circonferenza di centro $M$
+	
+
+	
+\begin{sol}Calcolare i segmenti di tangenza di inscritta ed ex-inscritta, poi omotetia in $A$
+ 
+\end{sol}
+
+	
+	\item Proprietà varie della circonferenza di Feuerbach. 
+	\end{enumerate}
+\clearpage
+
+\section{Esercizi Medium}
+\subsection{GM - 1, Esercizi}
+\begin{enumerate}
+	\item \textbf{[Scrittura del coniugato isogonale in complessi]} Dimostrare che in un triangolo $abc$ inscritto in una
+	circonferenza unitaria centrata nell'origine, il coniugato isogonale di $p$ è
+	\begin{equation}
+	q=\frac{-p+a+b+c-\overline{p}(ab+bc+ca)+\overline{p}^2abc}{(1-p\overline{p})}.
+	\end{equation}
+	\item \textbf{[Seconda intersezione di due circonferenze in complessi]} Siano dati 4 punti $a, b, c, d$ nel piano complesso che non formano un parallelogrammo.
+	
+	Mostrare che esiste una e una sola rotomotetia che
+	manda $a$ in $b$ e $c$ in $d$. Detto $x$ il centro di tale rotomotetia e $\alpha$ la ragione, si ha
+	$$
+	c=\frac{ad-bc}{a-b-c+d}
+	$$
+	$$
+	\alpha=\frac{b-d}{a-c}.
+	$$
+	
+	Mostrare che l'intersezione delle circonferenze circoscritte a $ABX$ e $CDX$ dove $AC$ e $BD$ sono segmenti non paralleli le cui rette si intersecano in $X$, è il centro della rotomotetia che manda $A$ in $B$ e $C$ in $D$. 
+	
+	\textbf{Soluzione:} Sia $x$ il centro della rotomotetia, $\alpha$ il numero complesso che rappresenta la rotomotetia - ovvero l'argomento di $\alpha$ è l'angolo di rotazione e il modulo di $\alpha$ è la ragione della rotomotetia. Se manda $a$ in $b$, allora 
+	$$
+	b-x = (a-x)\alpha ,
+	$$
+	e poiché manda $c$ in $d$ si ha anche 
+	$$
+	d-x = (c-x)\alpha.
+	$$
+	Dunque per confronto 
+	$$
+	\frac{b-x}{a-x}=\frac{d-x}{c-x}
+	$$
+	da cui 
+	$$
+	(b-x)(c-x)=(d-x)(a-x)\Rightarrow x=\frac{ad-bc}{a-b-c+d}.
+	$$
+	
+	Svolgendo i calcoli si ha infine
+	
+	$$
+	\alpha=\frac{b-d}{a-c}.
+	$$
+	\item \textbf{[Una caratterizzazione della \textit{polare} come luogo dei \emph{quarti armonici}]} Sia $\gamma$ la circonferenza unitaria centrata nell'origine e sia $P$ un punto qualsiasi. Siano $r$ ed $s$ la polare di $P$ rispetto a $\Gamma$ e una retta passante per $P$ rispettivamente. 
+		\begin{itemize}
+		\item Mostrare che $r$ ha equazione
+			\begin{equation}
+			x\bar{p}-2+\bar{x}p=0
+			\end{equation}
+			dove $p$ è il numero complesso associato a $P$.
+		\item  Supponiamo che $s$ intersechi $\gamma$ in $A_1, A_2$, ed $r$ in $Q$. Mostrare che $(P,Q;A1,A2)=-1$.
+		\end{itemize}
+	\item \textbf{[Scrittura del circocentro di un triangolo generico in complessi]} Mostrare che il circocentro del triangolo $z_1z_2z_3$ è
+		\begin{equation}
+		\frac{z_1\bar{z_1}(z_2-z_3)+z_2\bar{z_2}(z_3-z_1)+z_3\bar{z_3}(z_1-z_2)}{\begin{vmatrix}
+			z_1 & \bar{z_1} & 1 \\
+			z_2 & \bar{z_2} & 1 \\
+			z_3 & \bar{z_3} & 1 
+			\end{vmatrix}}.
+		\end{equation}
+	\item \textbf{[Teorema di Brocard]} Sia $ABCD$ un quadrilatero inscritto in una circonferenza di centro $O$. Le rette $AB$ e $CD$ si intersecano in $E$, le rette $AD$ e $BC$ si intersecano in $F$ e le rette $AC$ e $BD$ si intersecano in $G$. \\
+	Mostrare che $O$ è ortocentro di $EFG$.
+	
+	\item Sia $ABC$ un triangolo di ortocentro $H$. Da $A$ si conducano le due tangenti alla circonferenza di diametro $BC$ che la intersecano in $P$ e $Q$. \\
+	Mostrare che $H\in PQ$.
+	
+	\begin{sol} la circonferenza unitaria è quella di diametro BC.
+	I punti x che stanno su tale circonferenza e per cui $AX \perp OX$ soddisfano una quadratica. Sia $H'$ l'intersezione di $AH$ con $PQ$. Basta mostrare che $CH' \perp AB.$
+	\end{sol}
+	
+	\item \textbf{[Una caratterizzazione del \textit{punto di Lemoine}]} Sia $ABC$ un triangolo e siano $D$, $E$ e $F$ i punti medi di $BC$, $CA$ e $AB$ rispettivamente. Siano $X$, $Y$ e $Z$ i punti medi delle altezze condotte da $A$, $B$ e $C$ rispettivamente. 
+	
+	Mostrare che $DX$, $EY$ e $FZ$ si intersecano in un punto di coordinate baricentriche $[a^2:b^2:c^2]$. Chi è tale punto nel triangolo referenziale?
+	
+	$(\star)$ Mostrare che tale punto (il \textit{punto di Lemoine}) è l'unico punto ad essere baricentro del proprio triangolo pedale.
+	\item \textbf{[Coordinate dei vertici del \textit{triangolo tangenziale} in baricentriche]}  Dato un triangolo $ABC$ referenziale in un sistema di coordinate baricentriche, mostrare che la tangente condotta da $A$ alla circonferenza circoscritta ad $ABC$ ha equazione
+	\begin{equation}
+	c^2y+b^2z=0.
+	\end{equation}
+	
+	Ciclando opportunamente, calcolare le coordinate dei vertici del triangolo tangenziale (\textit{i.e.} il triangolo formato dalle intersezione delle tangenti condotte da $A$, $B$ e $C$ alla circonferenza circoscritta ad $ABC$).
+	
+	\textbf{Soluzione:}
+	Calcoliamo le coordinate di $P$, intersezione della tangente condotta da $A$ alla circoscritta e $BC$. Risulta che 
+	$$
+	P=[0:-b^2:c^2]
+	$$
+	da cui si ottiene subito che la tangente, dovendo passare per $A=[1:0:0]$ è
+	$$
+	c^2y+b^2z=0.
+	$$
+	
+	Ciclando si ottiene che i vertici del triangolo tangenziale sono $[a^2:b^2:-c^2]$ e ciclici.
+	\item Sia dato un triangolo $ABC$ e un punto $P$ di coordinate baricentriche $[u:v:w]$ scegliendo come triangolo referenziale $ABC$.
+		\begin{itemize}
+			\item \textbf{[Proiezione di un punto sui lati in baricentriche]} Mostra che, dette $P_A$, $P_B$ e $P_C$ le proiezioni di $P$ sui lati $BC$, $CA$ e $AB$, si ottiene
+			$$
+			P_A = [0: S_Cu+a^2v:S_Bu+a^2w]
+			$$
+			$$
+			P_B = [S_Cv+b^2u: 0: S_Av+b^2w]
+			$$
+			$$
+			P_C = [S_Bw+c^2u: S_Aw+c^2v: 0]
+			$$			
+			dove $S_A=\displaystyle\frac{b^2+c^2-a^2}{2}$ e cicliche.
+			\item  \textbf{[Punto all'infinito della retta perpendicolare in baricentriche]} Usando il punto precedente mostrare che 
+			il punto all'infinito di una retta perpendicolare a $px+qy+rz=0$ è
+			\begin{equation}
+			[S_Bg-S_Ch:S_Ch-S_Af:S_Af-S_Bg]
+			\end{equation}
+			dove $[f:g:h]=[q-r:r-p:p-q]$ è il punto all'infinito della retta.
+		\end{itemize}
+	\item \textbf{[Intersezione delle ceviane per un punto P con la circoscritta in baricentriche]} Sia $P=[u:v:w]$, dove le coordinate baricentriche 
+	sono riferite ad $ABC$. Dette $P^A$, $P^B$ e $P^C$ rispettivamente le intersezioni di $AP$, $BP$ e $CP$ con la circonferenza circoscritta, mostrare che 
+	$$
+	P^A=\left[\displaystyle\frac{-a^2vw}{c^2v+b^2w}:v:w\right]
+	$$
+	$$
+	P^B=\left[u:\displaystyle\frac{-b^2uw}{a^2w+c^2u}:w\right]
+	$$
+	$$
+	P^C=\left[u:v:\displaystyle\frac{-c^2uv}{a^2v+b^2u}\right].
+	$$
+	\item Ricordiamo il seguente fatto noto di geometria elementare: un punto $P$ sta sulla circonferenza circoscritta ad un triangolo $ABC$ se e solo se le sue proiezioni sui lati $AB$, $BC$ e $CA$ sono allineate (su quella che si chiama \textit{retta di Simson}). 
+	
+	Usando questo fatto e l'esercizio 9 mostrare che l'equazione della circonferenza circoscritta al triangolo referenziale è
+	\begin{equation}
+	a^2yz+b^2xz+c^2xy=0.
+	\end{equation}
+	\item Mostrare che l'asse radicale fra la circonferenza circoscritta al triangolo referenziale e 
+		\begin{itemize}
+			\item la circonferenza di Feuerbach è $S_Ax+S_By+S_Cz=0$.
+			\item la circonferenza inscritta è $(p-a)^2x+(p-b)^2y+(p-c)^2z=0$, essendo $p=\displaystyle\frac{a+b+c}{2}$.
+		\end{itemize} 
+	\item \textbf{[Distanza fra due punti in baricentriche]} Siano $P=[u:v:w]$ e $Q=[u':v':w']$ le coordinate \textbf{baricentriche esatte} di due punti rispetto a un triangolo referenziale $ABC$.
+	\begin{itemize} 
+	\item Mostrare che
+	\begin{equation}
+	PQ^2=S_A(u-u')^2+S_B(v-v')^2+S_C(w-w')^2.
+	\end{equation}
+	\item Dato un generico punto $P=[u:v:w]$, mostrare che 
+	\begin{equation}
+	AP^2=\frac{c^2v^2+2S_Avw+b^2w^2}{(u+v+w)^2}
+	\end{equation}
+	e dedurre, ciclicamente, le espressioni per $BP^2$ e $CP^2$.
+	\end{itemize}
+	\item Mostrare che il coniugato isogonale del punto di Nagel (risp. Gergonne) è il centro di omotetia esterno (risp. interno) della circonferenza inscritta e circoscritta. 
+\end{enumerate}
+\clearpage
+
+\subsection{GM - 2, Esercizi}
+\begin{enumerate}
+	\item Siano $\gamma_1$ e $\gamma_2$ due circonferenze di centri $O_1$ e $O_2$ rispettivamente. Siano $S_1$ e $S_2$ rispettivamente il centro di similitudine interno ed esterno di $\gamma_1$ e $\gamma_2$.
+	
+	Mostrare che $(O_1,O_2;S_1,S_2)=-1$.
+	\item Siano $A$, $C$, $B$ e $D$ allineati in quest'ordine su una retta. Siano $M$ e $N$ i punti medi dei segmenti
+	$CD$ e $AB$ rispettivamente. 
+	
+	Mostrare che sono equivalenti le seguenti proprietà:
+	\begin{itemize}
+		\item $(A,B;C,D)=-1$;
+		\item $\displaystyle\frac{2}{AB}=\displaystyle\frac{1}{AC}+
+		\displaystyle\frac{1}{AD}$;
+		\item $MA\cdot MB=MC^2$;
+		\item $CA\cdot CB=CD\cdot CN$;
+		\item $AB^2+CD^2=4MN^2$.
+	\end{itemize}
+	\item Siano $\gamma_1$ e $\gamma_2$ due circonferenze \textit{ortogonali} di centri $O_1$ e $O_2$ rispettivamente. Una generica retta passante per $O_1$ interseca $\gamma_1$ in $A$ e $B$ e interseca $\gamma_2$ in $C$ e $D$.
+	
+	Mostrare che $(A,B;C,D)=-1$.
+	\item \textbf{[Conservazione del birapporto per inversione]} Assumiamo che $A$, $B$, $C$ e $D$ siano allineati o conciclici. Siano $A'$, $B'$, $C'$ e $D'$ (allineati o conciclici) le immagini dei precedenti punti tramite un'inversione circolare di centro $O\notin\left\{A,B,C,D\right\}$  qualsiasi. Allora
+	\begin{equation}
+	(A,B;C,D)=(A',B';C',D').
+	\end{equation}
+	
+	Cosa succede se $O\in \{A,B,C,D\}$?
+	\item \textbf{[Unicità del quarto armonico]}
+	Assumiamo che $A$, $B$, $C$, $D_1$ e $D_2$ siano conciclici o allineati.
+	
+	Mostrare che se $(A,B;C,D_1)=(A,B;C,D_2)$ allora $D_1 \equiv D_2$.
+	
+    \item Sia $ABC$ un triangolo e $M$ un punto sul segmento $BC$. Sia $N$ preso sulla retta di $BC$ dimodoché $\angle MAN=90$.
+    
+    Mostrare che $(B,C;M,N)=-1$ se e solo se $AM$ è bisettrice dell'angolo $\angle{BAC}$.
+    \item Sia $ABC$ un triangolo scaleno e sia $D \in AC$ tale che $BD$ è la bisettrice di $\angle ABC$.
+    Siano $E$ ed $F$ i piedi delle perpendicolari tracciate rispettivamente da $A$ e da $C$ sulla retta $BD$ e
+    sia $M \in BC$ tale che $DM \perp BC$.
+    
+    Mostrare che $\angle EMD=\angle DMF$.
+    \item \textbf{[Teorema della farfalla]} Sia $MN$ una corda di una circonferenza $\gamma$ e sia $P$ il suo punto medio. Siano $AB$ e $CD$ due corde qualsiasi di $\gamma$ che si intersecano in $P$ dimodoché $A$ e $C$ siano nello stesso semipiano generato dalla retta su cui giace $MN$. 
+    
+    Mostrare che $AD$ e $BC$ intersecano la corda $MN$ in due punti equidistanti da $P$. 
+    \item Sia $ABCD$ un quadrilatero circoscritto a una circonferenza e siano $M$, $N$, $P$ e $Q$ i punti di tangenza di $AB$, $BC$, $CD$ e $DA$ con la circonferenza rispettivamente. 
+    
+    Mostrare che $AC$, $BD$, $MP$ e $NQ$ sono concorrenti.
+    \item \emph{[Copiato in GB]} \textbf{[Lemma della \textit{simmediana}]} Sia $ABC$ un triangolo inscritto in una circonferenza $\gamma$. Le tangenti a $\gamma$ in $B$ e $C$ si intersecano in $P$.
+    
+    Mostrare che $AP$ è \textit{simmediana} relativa a $BC$, \textit{i.e.} simmetrica della mediana relativa a $BC$ rispetto alla bisettrice dell'angolo $\angle BAC$.
+    
+    \item Sia $ABCD$ un quadrilatero ciclico. Le rette $AB$ e $CD$ si intersecano in un punto $E$ e le diagonali $AC$ e $BD$ si intersecano in un punto $F$. Sia $H$ l'intersezione delle circonferenze circoscritte ai triangoli $AFD$ e $BFC$. 
+    
+    Mostrare che $\angle EHF=90^{\circ}$.
+    
+    \item Sia $ABCD$ un quadrilatero armonico inscritto in una circonferenza $\gamma$ di centro $O$ con diagonali $AB$ e $CD$. Sia $M$ il punto medio di $AB$.
+    
+    Mostrare $MA$ è la bisettrice dell'angolo $\angle CMD$.
+    \item Usando gli argomenti della lezione \textbf{G2 - Medium} mostrare il \textbf{Teorema di Brocard} contenuto nella raccolta degli esercizi relativi alla lezione \textbf{G1 - Medium}. 
+    
+    \item Sia $\omega$ la circonferenza inscritta in un triangolo $ABC$ e sia $I$ il suo centro. $\omega$ interseca $BC$, $CA$ e $AB$ rispettivamente in $D$, $E$ e $F$. $BI$ interseca $EF$ in $K$.
+    
+    Mostrare che $BK\perp CK$. 
+    \item Sia $ABC$ un triangolo la cui circonferenza inscritta, di centro $I$, tange $BC$,$CA$ e $AB$ in $D$,$E$ e $F$  rispettivamente. Siano $N$ l'intersezione di $ID$ con $EF$ e $M$ il punto medio di $BC$.
+    
+    Mostrare che $A$, $N$ e $M$ sono allineati.
+\end{enumerate}
+\clearpage
+\subsection{GM - 3, Esercizi}
+\begin{enumerate}
+	\item Sia $ABCD$ un quadrilatero ciclico di circocentro $O$. Le rette $AB$ e $CD$ si intersecano in $E$, le rette $AD$ e $BC$ si intersecano in $F$ e le rette $AC$ e $BD$ si intersecano in $P$. Sia $K$ l'intersezione di $EP$ e $AD$ e $M$ la proiezione di $O$ su $AD$.
+	
+	Mostrare che $BCMK$ è ciclico. 
+	\item Sia $ABC$ un triangolo. Mostrare che il centro della (unica) rotomotetia che manda $B$ in $A$ e $A$ in $C$ è sulla simmediana uscente da $A$. 
+	
+	\textbf{Soluzione:} Viste le considerazioni fatte nella parte sulla rotomotetia, tale centro è l'intersezione $X$ fra la circonferenza che passa per $A$ e $B$ e tange $AC$ in $A$ e la circonferenza che passa per $A$ e $C$ e tange $AB$ in $A$.
+	Ora (anticipazione) faccio una inversione di centro in $A$ e raggio $\sqrt{AB\cdot AC}$ più una simmetria rispetto alla bisettrice. Si ha che $B\to C$ e $C\to B$. La circonferenza $ABX$ va in una retta passante per $C$ e parallela ad $AB$ e la circonferenza $ACX$ va in una retta passante per $B$ e parallela ad $C$. Dunque $X$ va in un punto sulla mediana e dunque prima era sulla simmediana. 
+	\item \textbf{[Fatti su triangolo con mistilinea]} Sia $ABC$ un triangolo iscritto in una circonferenza $\Gamma$ e sia $\gamma$ la circonferenza tangente ai segmenti $AB$, $AC$ e a $\Gamma$ rispettivamente in $E$, $F$ e $T$. Sia $I$ l'incentro di $ABC$. Sia $M$ il punto medio dell'arco $BC$ che non contiene $A$. Sia $V$ l'intersezione di $AT$ con $EF$. 
+	
+	Mostrare che:
+	\begin{itemize}
+		\item $I\in EF$ e $IE=IF$;
+		\item $MT$, $EF$ e $BC$ sono concorrenti;
+		\item $\angle BVE=\angle CVF$.
+	\end{itemize}
+
+	\item \textbf{[Teorema di Sawyama-Thébault]} 
+	Sia $ABC$ un triangolo di incentro $I$ e sia $D$ un punto sul lato $BC$. Sia $P$ (rispettivamente $Q$) il centro della circonferenza che tange i segmenti $AD$ e $DC$ (rispettivamente $DB$) e la circonferenza circoscritta ad $ABC$. 
+	
+	Mostrare che $P$, $Q$ e $I$ sono allineati.
+	\item \textbf{[NUSAMO 2015/2016 - 5]}
+	Sia $ABC$ un triangolo, $I_A$ l'excentro opposto ad $A$
+	e $I$ il suo incentro. Sia $M$ il circocentro del triangolo $BIC$ e sia $G$ la proiezione di $I_A$ su $BC$.
+	Sia, infine, $P$ l'intersezione fra la circonferenza circoscritta di $ABC$ e la circonferenza di diametro $AI_A$. 
+	
+	Mostrare che $M$, $G$ e $P$ sono allineati.
+	\begin{sol}
+	Inversione nella circonferenza circoscritta a BIC che ha centro in M
+    \end{sol}
+
+	\item \emph{[Copiato in GB]} Siano $A$, $B$ e $C$ tre punti allineati e supponiamo che $P$ sia un punto qualsiasi del piano distinto dai precedenti 3. 
+	
+	Mostrare che i circocentri dei triangoli $PAB$, $PAC$, $PBC$ e $P$ sono conciclici.
+	\item \emph{[Copiato in GB]} Sia $ABC$ un triangolo con ortocentro $H$ e siano $D$, $E$ e $F$ i piedi delle altezze che cadono sui lati $BC$, $CA$ e $AB$ rispettivamente. Sia $T=EF\cap BC$.
+	
+	Mostrare che $TH$ è perpendicolare alla mediana condotta da $A$.
+    %inversione di centro A e raggio AH\cdot HD. La tesi diventa equivalente a mostrare che la circonferenza per D (immagine di H), per l'intersezione della circoscritta con AEF (immagine di T) e A ha la retta AM come diametro. Questo segue perché in effetti M,T',A,D sono ciclici
+    \item \textbf{[Teorema di Feuerbach]}\emph{[Copiato in GB]} Mostrare che la circonferenza di Feuerbach è tangente alla circonferenza inscritta e alle circonferenze exinscritte.
+    
+    \emph{Suggerimento:} Sia $M$ il punto medio di $BC$ e $D$ e $G$ rispettivamente i punti in cui la circonferenza inscritta e quella ex-inscritta opposta ad $A$ incontrano $BC$. Invertire in $M$ con raggio $MD$.
+    %Per prima cosa si nota che il piede della perpendicolare e il piede della bisettrice su BC si scambiano perché MH\cdot MI=MD^2. Inoltre si mostra passando per la circoscritta che la retta immagine della circonferenza dei nove punti fa un angolo di beta - gamma con BC. Dunque la cfr dei nove punti va nella simmetrica della retta BC rispetto alla bisettrice che tange entrambe le circonferenze inscritta ed exinscritta. Inoltre queste due si scambiano
+    
+    \item La circonferenza inscritta nel triangolo $ABC$ è tangente a $BC$, $CA$ e $AB$ in $M$, $N$ e $P$ rispettivamente. 
+    
+    Mostrare che il circocentro e l'incentro di $ABC$ sono allineati con l'ortocentro di $MNP$.
+    %Inversione nella circonferenza inscritta 
+\end{enumerate}
+
 \suspend{enumerate}
 \textbf{Vario}
 \resume{enumerate}

@@ -417,9 +417,12 @@ Mostrare che l'intersezione delle circonferenze circoscritte a $ABX$ e $CDX$ dov
 	
 	%Ciclando si ottiene che i vertici del triangolo tangenziale sono $[a^2:b^2:-c^2]$ e ciclici.
 	\emph{Dai problemi:}
-	\item \textbf{[IMO 2012 - 1]} Dato un triangolo $ABC$, sia $J$ il centro della circonferenza ex-inscritta opposta al vertice $A$, la quale tange $BC$ in $M$ e le rette $AB$ e $AC$ in $K$ e $L$ rispettivamente. Le rette $LM$ e $BJ$ si intersecano in $F$ e le rette $KM$ e $CJ$ si intersecano in $G$. Sia $S$ il punto d'intersezione fra $AF$ e $BC$ e sia $T$ il punto d'intersezione fra $AG$ e $BC$. 
+	\item \textbf{[MOP 2006]} Sia $ABC$ un triangolo inscritto in una circonferenza $\omega$. $P$ giace su $BC$ in modo tale che $PA$ è tangente a $\omega$. La bisettrice di $\angle APB$ interseca i segmenti $AB$ e $AC$ rispettivamente in $D$ ed $E$ e i segmenti $BE$ e $CD$ si intersecano in $Q$. Supponiamo che la retta $PQ$ passi per il centro di $\omega$. 
 	
-	Mostrare che $M$ è il punto medio di $ST$.
+	Calcolare $\angle BAC$.
+	
+	%\textbf{Soluzione:}
+	%Dagli esercizi sappiamo che $P=[0:b^2:-c^2]$. Dal teorema della bisettrice si deduce che $D=[c:b:0]$ e $E=[b:0:c]$, da cui $Q=[bc:b^2:c^2]$. A questo punto usando $O=[a^2S_A:b^2S_B:c^2S_C]$ e imponendo il determinante uguale a 0 si deduce $\angle BAC=60$.
 	
 	 
 	
@@ -512,15 +515,104 @@ Un'avventura mistilinea: considerati quattro punti in senso antiorario su una ci
 \end{itemize}
 
 Ripasso delle proprietà base riguardanti l'inversione. $\sqrt{bc}$-inversione più simmetria: risoluzione di alcuni problemi.
+
+\vspace{0.3cm}
+\large{\textbf{Versione estesa - Senior 2019}}\normalsize
+
+\vspace{0.3cm}
+
+\begin{itemize}
+	\item \textbf{Angoli Orientati}:
+	\emph{Definizione}. L'angolo orientato $\angle(l,r)$ è l'angolo di cui si deve ruotare $l$ in senso antiorario perché coincida con $r$. L'angolo orientato $\angle ABC$ è, per definizione, l'angolo orientato $\angle(AB,BC)$.
+	
+	\emph{Proprietà}. 
+	\begin{enumerate}
+		\item $\angle(l,m)+\angle(m,l)=\pi$,
+		\item $\angle ABC+\angle BCA+\angle CAB=\pi$,
+		\item $\angle AOP + \angle POB=\angle AOB$,
+		\item $A,B,C$ allineati se e solo se per un punto (o per tutti) $\angle XBC=\angle XBA$,
+		\item $A,B,X,Y$ ciclico se esolo se $\angle AXB=\angle AYB$. 
+	\end{enumerate}
+
+	\item \textbf{Teorema di Miquel}:
+	\emph{Versione triangolare}. Dato $ABC$ un triangolo e $D,E,F$ punti rispettivamente sulle rette dei lati $BC$, $CA$ e $AB$, le circonferenze $AEF$, $BDF$ e $CDE$ concorrono. 
+	
+	\emph{Versione quadrangolare}. Date $r_1,r_2,r_3,r_4$ rette che si intersecano in 6 punti (\emph{Cosa succede nei casi degeneri?}) siano $A_{ij}\doteq r_i\cap r_j$ i punti di intersezione. Le circonferenze circoscritte ai triangoli $A_{12}A_{23}A_{31}$, $A_{12}A_{24}A_{14}$, $A_{13}A_{34}A_{14}$ e $A_{23}A_{34}A_{24}$ concorrono.
+
+\item \textbf{Rotomotetie}: Dati due punti $A,B,C,D$ distinti sul piano, ricordare che esiste una e una sola rotomotetia che porta $A$ in $B$ e $C$ in $D$ se e solo se $AC$ non è parallelo a $BD$. In tal caso, detto $X\doteq AC\cap BD$, il centro di tale rotomotetia è $W$ l'interesezione delle circonferenze circoscritte a $AXB$ e $CXD$. Discutere cosa succede se $X$ coincide con uno dei 4 punti $A,B,C,D$ (una delle due circonferenze da tracciare diviene tangente ad uno dei segmenti).
+
+\emph{Dagli Esercizi:}
+Discutere un caso degenere \item Sia $ABC$ un triangolo. Mostrare che il centro della (unica) rotomotetia che manda $B$ in $A$ e $A$ in $C$ è sulla simmediana uscente da $A$. 
+
+\item \textbf{Inversione $\sqrt{bc}$ e simmetria}. Usare come pretesto la parte finale dell'esercizio precedente per introdurre questa tecnica. 
+
+%\textbf{Soluzione:} Viste le considerazioni fatte nella parte sulla rotomotetia, tale centro è l'intersezione $X$ fra la circonferenza che passa per $A$ e $B$ e tange $AC$ in $A$ e la circonferenza che passa per $A$ e $C$ e tange $AB$ in $A$.
+%Ora (anticipazione) faccio una inversione di centro in $A$ e raggio $\sqrt{AB\cdot AC}$ più una simmetria rispetto alla bisettrice. Si ha che $B\to C$ e $C\to B$. La circonferenza $ABX$ va in una retta passante per $C$ e parallela ad $AB$ e la circonferenza $ACX$ va in una retta passante per $B$ e parallela ad $C$. Dunque $X$ va in un punto sulla mediana e dunque prima era sulla simmediana. 
+\emph{Dai problemi:}
+\item \textbf{[USAMO 2006]} 
+Sia $ABCD$ un quadrilatero e siano $E$ e $F$ punti su $AD$ e $BC$ rispettivamente tali che $AE/ED=BF/FC$.
+La retta $FE$ incontra $BA$ e $CD$ in $S$ e $T$ rispettivamente. 
+
+Mostrare che le circonferenze circoscritte ai triangoli $SAE$, $SBF$, $TCF$ e $TDE$ passano per uno stesso punto.
+
+%\textbf{Soluzione:} Innanzitutto Per Miquel sui quadrangoli sappiamo che le circonferenze circoscritte ai triangoli $SAE$, $SBF$ e $ABX$ concorrono; così come le circonferenze circoscritte ai triangoli $TCF$, $TDE$ e $XCD$. Quindi, essendo la tesi vera, l'intersezione delle quattro circonferenze deve essere l'altra intersezione fra le circonferenze $XAB$ e $XCD$. Sia $Y$ questa intersezione. Per quanto visto sulle rotomotetie, questo punto è il centro della rotomotetia che manda $BC$ in $AD$ e dunque, visti i rapporti fra i segmenti, deve mandare $F$ in $E$. Allora 
+%$$
+%\angle YFB=\angle YEX
+%$$
+%e dunque $Y$ è sulla circonferenza circoscritta a $XEF$ e pertanto, per Miquel, anche su quella circoscritta a $SAE$ e $SBF$.
+
+\textbf{Approfondimento sulla configurazione di Miquel:} Sia $ABCD$ un quadrilatero con $Q\doteq AB\cap CD$ e $R\doteq AD\cap BC$. Mostrare che 
+\begin{enumerate}
+	\item $M\in QR$ se e solo se $ABCD$ ciclico, 
+	\item $ABCD$ ciclico implica $OM\perp QR$,
+	\item $ABCD$ ciclico implica $MAOC$ e $BODM$ ciclici, 
+	\item $ABCD$ ciclico implica $MO$ biseca $AMC$ e $BMD$,
+	\item $ABCD$ ciclico implica $O$, $M$ e $AC\cap BD$ allineati. Da ciò, invertendo nella circonferenza circoscritta ad $ABCD$, si ottiene che $P$ e $M$ sono uno l'inverso dell'altro.
+\end{enumerate}
+
+\textbf{Fatti sulle circonferenze mistilinee:} \emph{Le ceviane delle mistilinee concorrono}.
+Sia $ABC$ un triangolo inscritto in $\Omega$ e $\omega_A$ una circonferenza tangente internamente a $\Omega$ in $T_A$ e tangente anche ad $AB$ e $AC$ in $B_1$ e $C_1$ rispettivamente. Da un'inversione $\sqrt{bc}$ più simmetria rispetto alla bisettrice mostrare che $AT_A$ e cicliche concorrono - nel coniugato isogonale del punto di Nagel. Osservare che $AT_A$ contiene il centro di similitudine esterno fra $\omega$, la circonferenza inscritta ad $ABC$, e $\Omega$ e dunque il coniugato isogonale del punto di Nagel è il centro di similitudine esterno fra $\omega$ e $\Omega$. 
+
+\emph{Altri fatti}. Con riferimento alla precedente,  mostrare che
+\begin{enumerate}
+	\item L'incentro di $ABC$, $I$, è su $B_1C_1$. Ciò segue da Pascal su $M_{AB}T_AM_{AC}BAC$, dove $M_{AB}$ e $M_{AC}$ sono i punti medi degli archi $AB$ e $AC$ che non contengono $C$ e $B$; più il lemma che $T_A,B_1,M_{AB}$ sono allineati,  
+	\item L'incentro $I$, dopo l'inversione, va nell'excentro $I_A$. Ciò segue dal fatto che $AI\cdot AI_A=AB\cdot AC$ il quale a sua volta segue dal fatto che $BCII_A$ è ciclico più un semplice conto di angoli. Da ciò segue che $BT_AB_1I$ e $CT_AC_1I$ sono ciclici,
+	\item Dal punto precedente segue $T_AI$ biseca $\angle BT_AC$, 
+	\item $T_AM_A$, $BC$ e $B_1C_1$ concorrono applicando Pascal su $BCM_{AB}T_AM_AA$, 
+	\item Da due punti sopra viene $M_AT_A$ perpendicolare a $T_AI$ e dunque $T_AI$ interseca $\Omega$ nel diametralmente opposto di $M_A$.
+\end{enumerate}
+	\emph{Dai problemi:}
+	\item \textbf{[EGMO 2013 - 5]}
+	Sia $\Omega$ la circonferenza circoscritta ad un triangolo $ABC$. La circonferenza $\omega$ è tangente ai lati $AC$ e $BC$ e internamente alla circonferenza $\Omega$ in un punto $P$. Una retta parallela ad $AB$ che interseca l'interno del triangolo $ABC$ è tangente a $\omega$ in $Q$.
+	
+	Mostrare che $\angle ACP = \angle QCB$.
+	
+	%\textbf{Soluzione:} Per inversione più simmetria $AP$ è la simmetrica della ceviana di Nagel rispetto alla bisettrice, che , per omotetia, coincide con $AQ$.
+\item \textbf{Qualche problema sull'inversione:} 
+\emph{Dagli esercizi:}
+
+\textbf{[Teorema di Feuerbach]} Mostrare che la circonferenza di Feuerbach è tangente alla circonferenza inscritta e alle circonferenze exinscritte.
+
+%\emph{Suggerimento:} Sia $M$ il punto medio di $BC$ e $D$ e $G$ rispettivamente i punti in cui la circonferenza inscritta e quella ex-inscritta opposta ad $A$ incontrano $BC$. Invertire in $M$ con raggio $MD$.
+
+\emph{Dai problemi:}
+
+\textbf{[IMO 2015 - 3]} Sia $ABC$ un triangolo acutangolo con $AB > AC$. Sia $\Gamma$ la sua circonferenza circoscritta, $H$ il suo ortocentro, e $F$ il piede dell'altezza condotta da $A$. Sia $M$ il punto medo di $BC$. Sia $Q$ il punto su $\Gamma$ tale che $\angle HQA = 90^{\circ}$ e sia $K$ il punto su $\Gamma$ tale che $\angle HKQ = 90^{\circ}$. Assumiamo che $A$, $B$, $C$, $K$ e $Q$ sono tutti distinti e giacciono su $\Gamma$ in quest'ordine. 
+
+Mostrare che le circonferenze circoscritte ai triangoli $KQH$ e $FKM$ sono fra loro tangenti.
+%\begin{sol}Inversione di centro H che fissa la circonferenza circoscritta ad ABC. K'Q' diviene perpendicolare ad AK' che è l'asse di F'M' e dunque K'Q' è la tangente a K' nella circonferenza circoscritta a F'M'K'.
+%\end{sol}
+
+
+
+
+
+
+	
+\end{itemize}
 \clearpage
 
  
-
-
-
-
-
-
 
 
 
